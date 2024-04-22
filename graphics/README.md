@@ -32,7 +32,7 @@ The square icon is used on desktop as the base for the macOS icons. To update th
 1. Create the macOS icons by inserting the updated `/graphics/icon-square.svg` into Apple's macOS
 icon template available at https://developer.apple.com/design/resources/.
 1. Save the icons to `/graphics/macOS/`
-1. Run `scripts/build-logo-icons.sh`
+1. Run `gui/scripts/build-logo-icons.sh`
 
 #### Android
 

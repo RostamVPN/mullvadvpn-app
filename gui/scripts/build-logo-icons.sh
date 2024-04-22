@@ -74,7 +74,7 @@ rm -rf "$TMP_ICONSET_DIR"
 for size in 16 20 24 30 32 36 40 48 60 64 72 80 96 256 512; do
     rsvg-convert -o "$TMP_ICO_DIR"/$size.png -w $size -h $size $SVG_SOURCE_PATH
 done
-convert "$TMP_ICO_DIR"/* "$COMPRESSION_OPTIONS" $DIST_ASSETS_DIR/icon.ico
+convert "$TMP_ICO_DIR"/* $COMPRESSION_OPTIONS $DIST_ASSETS_DIR/icon.ico
 rm -rf "$TMP_ICO_DIR"
 
 # Windows installer sidebar
@@ -95,3 +95,4 @@ cp "$SVG_SOURCE_PATH" ../assets/images/logo-icon.svg
 
 rmdir "$TMP_DIR"
 
+echo "done"

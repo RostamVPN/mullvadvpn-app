@@ -850,8 +850,8 @@ msgid "If these steps do not work please send a problem report."
 msgstr "이러한 단계로 문제가 해결되지 않으면 문제 보고서를 보내주세요."
 
 msgctxt "launch-view"
-msgid "Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting."
-msgstr "Mullvad VPN 서비스에 대한 권한이 취소되었습니다. 시스템 설정으로 이동한 다음, \"백그라운드에서 허용\" 설정에서 Mullvad VPN을 허용하세요."
+msgid "Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting."
+msgstr "Rostam VPN 서비스에 대한 권한이 취소되었습니다. 시스템 설정으로 이동한 다음, \"백그라운드에서 허용\" 설정에서 Rostam VPN을 허용하세요."
 
 msgctxt "launch-view"
 msgid "Reinstalling the app."
@@ -1753,8 +1753,8 @@ msgid "Adult content"
 msgstr "성인 콘텐츠"
 
 msgctxt "vpn-settings-view"
-msgid "Attention: enabling this will always require a Mullvad VPN connection in order to reach the internet."
-msgstr "주의: 이 기능을 활성화하려면 인터넷 연결을 위해 항상 Mullvad VPN 연결이 필요합니다."
+msgid "Attention: enabling this will always require a Rostam VPN connection in order to reach the internet."
+msgstr "주의: 이 기능을 활성화하려면 인터넷 연결을 위해 항상 Rostam VPN 연결이 필요합니다."
 
 msgctxt "vpn-settings-view"
 msgid "Attention: this setting cannot be used in combination with <b>%(customDnsFeatureName)s</b>"
@@ -1864,8 +1864,8 @@ msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill
 msgstr "킬 스위치와 잠금 모드의 차이점은 킬 스위치는 자동 터널 다시 연결, 소프트웨어 충돌 및 이와 유사한 상황에서 유출을 방지한다는 것입니다."
 
 msgctxt "vpn-settings-view"
-msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "킬 스위치와 잠금 모드의 차이점은 킬 스위치는 자동 터널 다시 연결, 소프트웨어 충돌 및 이와 유사한 상황에서 유출을 방지한다는 것입니다. 잠금 모드가 활성화된 상태에서 인터넷에 연결하려면 Mullvad VPN 서버에 연결해야 합니다. 앱을 수동으로 연결 해제하거나 종료하면 연결이 차단됩니다."
+msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "킬 스위치와 잠금 모드의 차이점은 킬 스위치는 자동 터널 다시 연결, 소프트웨어 충돌 및 이와 유사한 상황에서 유출을 방지한다는 것입니다. 잠금 모드가 활성화된 상태에서 인터넷에 연결하려면 Rostam VPN 서버에 연결해야 합니다. 앱을 수동으로 연결 해제하거나 종료하면 연결이 차단됩니다."
 
 msgctxt "vpn-settings-view"
 msgid "The DNS server you want to add is a private IP. You must ensure that your network interfaces are configured to use it."
@@ -1921,8 +1921,8 @@ msgid "When this feature is enabled, IPv6 can be used alongside IPv4 in the VPN 
 msgstr "이 기능을 활성화하면 VPN 터널에서 IPv4와 함께 IPv6을 사용하여 인터넷 서비스와 통신할 수 있습니다."
 
 msgctxt "vpn-settings-view"
-msgid "With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "잠금 모드가 활성화된 상태에서 인터넷에 연결하려면 Mullvad VPN 서버에 연결해야 합니다. 앱을 수동으로 연결 해제하거나 종료하면 연결이 차단됩니다."
+msgid "With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "잠금 모드가 활성화된 상태에서 인터넷에 연결하려면 Rostam VPN 서버에 연결해야 합니다. 앱을 수동으로 연결 해제하거나 종료하면 연결이 차단됩니다."
 
 #. Title label in navigation bar
 #. Available placeholders:
@@ -2012,8 +2012,8 @@ msgctxt "Message to indicate how much time was added to an account as part of an
 msgid "%s was added to your account."
 msgstr "%s이(가) 계정에 추가되었습니다."
 
-msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Mullvad VPN</b> name."
-msgstr "1. 아래의 <b>VPN 설정으로 이동</b> 버튼을 클릭한 후 <b>Mullvad VPN</b> 이름 옆의 톱니바퀴를 클릭합니다."
+msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Rostam VPN</b> name."
+msgstr "1. 아래의 <b>VPN 설정으로 이동</b> 버튼을 클릭한 후 <b>Rostam VPN</b> 이름 옆의 톱니바퀴를 클릭합니다."
 
 msgid "2. To enable Auto-connect, click on the toggle next to <b>Always-on VPN</b>."
 msgstr "2. 자동 연결을 활성화하려면 <b>상시 접속 VPN</b> 옆에 있는 토글을 클릭합니다."
@@ -2123,8 +2123,8 @@ msgstr "Google Play 사용 불가"
 msgid "If the split tunneling feature is used, then the app queries your system for a list of all installed applications. This list is only retrieved in the split tunneling view. The list of installed applications is never sent from the device."
 msgstr "분할 터널링 기능을 사용하는 경우, 이 앱은 설치된 모든 애플리케이션 목록을 시스템에 쿼리합니다. 이 목록은 분할 터널링 보기에서만 검색됩니다. 설치된 애플리케이션 목록은 장치에서 전송되지 않습니다."
 
-msgid "Install Mullvad VPN (%s) to stay up to date"
-msgstr "Mullvad VPN(%s)을 설치하여 최신 상태로 유지하세요."
+msgid "Install Rostam VPN (%s) to stay up to date"
+msgstr "Rostam VPN(%s)을 설치하여 최신 상태로 유지하세요."
 
 msgid "Makes sure the device is always on the VPN tunnel."
 msgstr "장치가 항상 VPN 터널에 있어야 합니다."
@@ -2207,8 +2207,8 @@ msgstr "VPN 전환"
 msgid "Unable to apply firewall rules. Please troubleshoot or send a problem report."
 msgstr "방화벽 규칙을 적용할 수 없습니다. 문제를 해결하거나 문제 보고서를 보내주세요."
 
-msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Mullvad VPN."
-msgstr "터널 연결을 시작할 수 없습니다. Mullvad VPN을 사용하기 전에 <b>%s</b>에 대한 상시 접속 VPN을 비활성화하세요."
+msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Rostam VPN."
+msgstr "터널 연결을 시작할 수 없습니다. Rostam VPN을 사용하기 전에 <b>%s</b>에 대한 상시 접속 VPN을 비활성화하세요."
 
 msgid "Unsecured"
 msgstr "안전하지 않음"

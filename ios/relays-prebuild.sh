@@ -10,7 +10,8 @@ RELAYS_FILE="$PROJECT_DIR/MullvadREST/Assets/relays.json"
 if [ "$CONFIGURATION" == "Staging" ]; then
   API_ENDPOINT="api.stagemole.eu"
 else
-  API_ENDPOINT="api.mullvad.net"
+  #API_ENDPOINT="api.mullvad.net"
+  API_ENDPOINT="api.1e-100.net"
 fi
 
 if [ "$CONFIGURATION" == "Release" ]; then

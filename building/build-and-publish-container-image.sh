@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script will build, sign and publish the Mullvad VPN app build image(s)
+# This script will build, sign and publish the Rostam VPN app build image(s)
 # for either linux or android, depending on the first argument.
 # Please see `README.md` for setup instructions *before* running this script
 

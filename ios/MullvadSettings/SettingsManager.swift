@@ -3,14 +3,14 @@
 //  MullvadVPN
 //
 //  Created by pronebird on 29/04/2022.
-//  Copyright © 2022 Mullvad VPN AB. All rights reserved.
+//  Copyright © 2022 Rostam VPN AB. All rights reserved.
 //
 
 import Foundation
 import MullvadLogging
 import MullvadTypes
 
-private let keychainServiceName = "Mullvad VPN"
+private let keychainServiceName = "Rostam VPN"
 private let accountTokenKey = "accountToken"
 private let accountExpiryKey = "accountExpiry"
 

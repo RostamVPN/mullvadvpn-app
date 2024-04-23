@@ -1,8 +1,8 @@
-# Systemd service unit file for the Mullvad VPN daemon
+# Systemd service unit file for the Rostam VPN daemon
 # testing if new changes are added
 
 [Unit]
-Description=Mullvad VPN daemon
+Description=Rostam VPN daemon
 Before=network-online.target
 After=mullvad-early-boot-blocking.service NetworkManager.service systemd-resolved.service
 
@@ -14,7 +14,7 @@ RequiresMountsFor=/opt/Mullvad\x20VPN/resources/
 Restart=always
 RestartSec=1
 ExecStart=/usr/bin/mullvad-daemon -v --disable-stdout-timestamps
-Environment="MULLVAD_RESOURCE_DIR=/opt/Mullvad VPN/resources/"
+Environment="MULLVAD_RESOURCE_DIR=/opt/Rostam VPN/resources/"
 
 [Install]
 WantedBy=multi-user.target

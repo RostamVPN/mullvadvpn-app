@@ -1,4 +1,4 @@
-# Mullvad VPN Electron app
+# Rostam VPN Electron app
 
 This directory contains the files specific to the Electron app for the desktop platforms.
 

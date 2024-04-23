@@ -1,6 +1,6 @@
 [workspace.package]
-authors = ["Mullvad VPN"]
-repository = "https://github.com/mullvad/mullvadvpn-app/"
+authors = ["Rostam VPN"]
+repository = "https://github.com/rostam/rostamvpn-app/"
 license = "GPL-3.0"
 edition = "2021"
 rust-version = "1.77.0"
@@ -9,23 +9,23 @@ rust-version = "1.77.0"
 resolver = "2"
 members = [
     "android/translations-converter",
-    "ios/MullvadREST/Transport/Shadowsocks/shadowsocks-proxy",
+    "ios/RostamREST/Transport/Shadowsocks/shadowsocks-proxy",
     "ios/TunnelObfuscation/tunnel-obfuscator-proxy",
-    "mullvad-api",
-    "mullvad-cli",
-    "mullvad-daemon",
-    "mullvad-exclude",
-    "mullvad-fs",
-    "mullvad-jni",
-    "mullvad-management-interface",
-    "mullvad-nsis",
-    "mullvad-paths",
-    "mullvad-problem-report",
-    "mullvad-relay-selector",
-    "mullvad-setup",
-    "mullvad-types",
-    "mullvad-types/intersection-derive",
-    "mullvad-version",
+    "rostam-api",
+    "rostam-cli",
+    "rostam-daemon",
+    "rostam-exclude",
+    "rostam-fs",
+    "rostam-jni",
+    "rostam-management-interface",
+    "rostam-nsis",
+    "rostam-paths",
+    "rostam-problem-report",
+    "rostam-relay-selector",
+    "rostam-setup",
+    "rostam-types",
+    "rostam-types/intersection-derive",
+    "rostam-version",
     "talpid-core",
     "talpid-dbus",
     "talpid-future",

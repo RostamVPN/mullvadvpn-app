@@ -72,7 +72,7 @@ const windowsSplitTunneling = process.platform === 'win32' && require('./windows
 const ALLOWED_PERMISSIONS = ['clipboard-sanitized-write'];
 
 const SANDBOX_DISABLED = app.commandLine.hasSwitch('no-sandbox');
-const UPDATE_NOTIFICATION_DISABLED = process.env.MULLVAD_DISABLE_UPDATE_NOTIFICATION === '1';
+const UPDATE_NOTIFICATION_DISABLED = process.env.ROSTAM_DISABLE_UPDATE_NOTIFICATION === '1';
 
 const GEO_DIR = path.resolve(__dirname, '../../assets/geo');
 
@@ -162,7 +162,7 @@ class ApplicationMain
     log.info(`Running version ${this.version.currentVersion.gui}`);
 
     if (process.platform === 'win32') {
-      app.setAppUserModelId('net.mullvad.vpn');
+      app.setAppUserModelId('net.rostam.vpn');
     }
 
     // While running in development the watch script triggers a reload of the renderer by sending
@@ -445,7 +445,7 @@ class ApplicationMain
     // needed for the tests this block has been disabled when running e2e tests.
     if (process.platform === 'linux' && process.env.CI !== 'e2e') {
       try {
-        const icon = await findIconPath('mullvad-vpn', ['png']);
+        const icon = await findIconPath('rostam-vpn', ['png']);
         if (icon) {
           this.userInterface.setWindowIcon(icon);
         }
@@ -973,7 +973,7 @@ class ApplicationMain
   }
 
   private checkMacOsLaunchDaemon(): Promise<void> {
-    const daemonBin = resolveBin('mullvad-daemon');
+    const daemonBin = resolveBin('rostam-daemon');
     const args = ['--launch-daemon-status'];
     return new Promise((resolve, _reject) => {
       execFile(daemonBin, args, { windowsHide: true }, (error, stdout, stderr) => {
@@ -1105,8 +1105,8 @@ class ApplicationMain
 }
 
 if (CommandLineOptions.help.match) {
-  console.log('Mullvad VPN');
-  console.log('Graphical interface for managing the Mullvad VPN daemon');
+  console.log('Rostam VPN');
+  console.log('Graphical interface for managing the Rostam VPN daemon');
 
   console.log('');
   console.log('OPTIONS:');

@@ -1,7 +1,7 @@
 [package]
 name = "mullvad-version"
 description = """
-Computes the Mullvad VPN app product version. This crate is the single source of truth for
+Computes the Rostam VPN app product version. This crate is the single source of truth for
 what version string a build should have. This crate is responsible for computing the
 `-dev-$git_hash` suffix as well as transforming the version into semver, Android versionCode
 and other formats.

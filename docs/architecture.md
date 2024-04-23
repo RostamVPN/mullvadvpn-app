@@ -1,7 +1,7 @@
 
 
 
-# Mullvad VPN app architecture
+# Rostam VPN app architecture
 
 This document describes the code architecture and how everything fits together.
 

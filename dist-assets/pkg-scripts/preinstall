@@ -13,7 +13,7 @@ echo "Running preinstall at $(date)"
 
 # We need to run this is after extracting the new files and running "mullvad" in postinstall rather
 # than in preinstall.
-cp "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad-setup" "$TMPDIR/" || echo "Failed to copy mullvad-setup"
+cp "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad-setup" "$TMPDIR/" || echo "Failed to copy mullvad-setup"
 
 # Migrate cache files from <=2020.8-beta2 paths
 OLD_CACHE_DIR="/var/root/Library/Caches/mullvad-vpn"
@@ -38,7 +38,7 @@ dscl . -delete /groups/mullvad-exclusion &>/dev/null || true
 #
 # When we drop support for all app versions older than 2022.5, we can skip this
 # check and always try to kill the GUI.
-if "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad-setup" is-older-version 2022.5; then
-    pkill -x "Mullvad VPN" || echo "Unable to kill GUI, not running?"
+if "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad-setup" is-older-version 2022.5; then
+    pkill -x "Rostam VPN" || echo "Unable to kill GUI, not running?"
     sleep 1
 fi

@@ -1,6 +1,6 @@
 [workspace.package]
-authors = ["Mullvad VPN"]
-repository = "https://github.com/mullvad/mullvadvpn-app/"
+authors = ["Rostam VPN"]
+repository = "https://github.com/RostamVPN"
 license = "GPL-3.0"
 edition = "2021"
 rust-version = "1.77.0"

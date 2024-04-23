@@ -14,9 +14,9 @@ INSTALL_DIR=$2
 # Run CLI to force macOS to check the certificate, and shut down the already running daemon, if one
 # exists.
 # This is a temporary workaround. After 2023.3, we switched from signing with Amagicom AB to
-# Mullvad VPN AB certificates. This could potentially be removed when older versions are no longer
+# Rostam VPN AB certificates. This could potentially be removed when older versions are no longer
 # supported.
-"$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad" || true
+"$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad" || true
 "$TMPDIR/mullvad-setup" prepare-restart || \
     echo "Failed to send 'prepare-restart' command to old mullvad-daemon"
 
@@ -34,7 +34,7 @@ DAEMON_PLIST=$(cat <<-EOM
 
                 <key>ProgramArguments</key>
                 <array>
-                        <string>$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad-daemon</string>
+                        <string>$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad-daemon</string>
                         <string>-v</string>
                 </array>
 
@@ -78,7 +78,7 @@ cp "$LOG_DIR/daemon.log" "$LOG_DIR/old-install-daemon.log" \
 # For compatibility with versions older than 2022.5, kill the GUI after the
 # upgrade. We now do this in preinstall instead. This code can be removed when
 # we drop support for app versions older than 2022.5.
-pkill -x "Mullvad VPN" || true
+pkill -x "Rostam VPN" || true
 sleep 1
 
 echo "$DAEMON_PLIST" > $DAEMON_PLIST_PATH
@@ -86,12 +86,12 @@ chmod 644 $DAEMON_PLIST_PATH
 launchctl load -w $DAEMON_PLIST_PATH
 
 mkdir -p /usr/local/bin
-ln -sf "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad" /usr/local/bin/mullvad
-ln -sf "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad-problem-report" /usr/local/bin/mullvad-problem-report
+ln -sf "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad" /usr/local/bin/mullvad
+ln -sf "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad-problem-report" /usr/local/bin/mullvad-problem-report
 
 mkdir -p "$ZSH_COMPLETIONS_DIR"
-ln -sf "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/_mullvad" "$ZSH_COMPLETIONS_DIR/_mullvad"
+ln -sf "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/_mullvad" "$ZSH_COMPLETIONS_DIR/_mullvad"
 
 if [[ -d "$FISH_COMPLETIONS_DIR" ]]; then
-    ln -sf "$INSTALL_DIR/Mullvad VPN.app/Contents/Resources/mullvad.fish" "$FISH_COMPLETIONS_DIR/mullvad.fish"
+    ln -sf "$INSTALL_DIR/Rostam VPN.app/Contents/Resources/mullvad.fish" "$FISH_COMPLETIONS_DIR/mullvad.fish"
 fi

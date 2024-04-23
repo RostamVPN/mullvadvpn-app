@@ -143,7 +143,7 @@ void __declspec(dllexport) NSISCALL PromoteTrayIcon
 
 		bool updateRegistry = true;
 
-		if (auto mullvadRecord = juggler.findRecord(L"Mullvad VPN"))
+		if (auto mullvadRecord = juggler.findRecord(L"Rostam VPN"))
 		{
 			if (ICON_STREAMS_VISIBILITY::SHOW_ICON_AND_NOTIFICATIONS == mullvadRecord->Visibility)
 			{

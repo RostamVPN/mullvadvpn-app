@@ -108,7 +108,7 @@ fn print_account_loggedout(state: &DeviceState) {
         "Mullvad is blocking all network traffic until you perform one of the following actions:
 
 1. Login to a Mullvad account with available time/credits.
-2. Disconnect from Mullvad VPN. This can either be done from the CLI or the Mullvad App.
+2. Disconnect from Rostam VPN. This can either be done from the CLI or the Mullvad App.
 
 For more information, try 'mullvad account -h' or 'mullvad disconnect -h'"
     );

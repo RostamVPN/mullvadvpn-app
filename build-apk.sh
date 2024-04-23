@@ -8,7 +8,7 @@ cd "$SCRIPT_DIR"
 echo "Computing build version..."
 echo ""
 PRODUCT_VERSION=$(cargo run -q --bin mullvad-version versionName)
-echo "Building Mullvad VPN $PRODUCT_VERSION for Android"
+echo "Building Rostam VPN $PRODUCT_VERSION for Android"
 echo ""
 
 BUILD_TYPE="release"

@@ -1,5 +1,5 @@
 # To build the image (executed from this Dockerfile directory):
-# podman build . -t mullvadvpn-app-build-android
+# podman build . -t rostamvpn-app-build-android
 #
 # To build using the image:
 # podman run --rm \
@@ -8,7 +8,7 @@
 #     -v $GRADLE_CACHE_VOLUME_NAME:/root/.gradle:Z \
 #     -v $ANDROID_CREDENTIALS_DIR:/build/android/credentials:Z \
 #     -v /path/to/repository_root:/build:Z \
-#     mullvadvpn-app-build-android ./build-apk.sh --dev-build --no-docker
+#     rostamvpn-app-build-android ./build-apk.sh --dev-build --no-docker
 #
 # See the base image Dockerfile in the repository root (../../Dockerfile)
 # for more information.
@@ -19,11 +19,11 @@
 # patch for a given go version can be identified by checking the wireguard-android
 # repo: https://git.zx2c4.com/wireguard-android/tree/tunnel/tools/libwg-go.
 # It's also important to keep the go path in sync.
-FROM ghcr.io/mullvad/mullvadvpn-app-build:01a98bb5b
+FROM ghcr.io/rostam/rostamvpn-app-build:01a98bb5b
 
 # === Metadata ===
-LABEL org.opencontainers.image.source=https://github.com/mullvad/mullvadvpn-app
-LABEL org.opencontainers.image.description="Mullvad VPN app Android build container"
+LABEL org.opencontainers.image.source=https://github.com/rostam/rostamvpn-app
+LABEL org.opencontainers.image.description="Rostam VPN app Android build container"
 LABEL org.opencontainers.image.licenses=GPL-3.0
 
 # === Define toolchain versions and paths ===

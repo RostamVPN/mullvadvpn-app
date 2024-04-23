@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-daemon"
-description = "Mullvad VPN daemon. Runs and controls the VPN tunnels"
+description = "Rostam VPN daemon. Runs and controls the VPN tunnels"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true
@@ -89,8 +89,8 @@ features = [
 ]
 
 [package.metadata.winres]
-ProductName = "Mullvad VPN"
-CompanyName = "Mullvad VPN AB"
-LegalCopyright = "(c) 2024 Mullvad VPN AB"
+ProductName = "Rostam VPN"
+CompanyName = "Rostam VPN AB"
+LegalCopyright = "(c) 2024 Rostam VPN AB"
 InternalName = "mullvad-daemon"
 OriginalFilename = "mullvad-daemon.exe"

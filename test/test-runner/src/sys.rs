@@ -18,7 +18,7 @@ const SYSTEMD_OVERRIDE_FILE: &str = "/etc/systemd/system/mullvad-daemon.service.
 const PLIST_OVERRIDE_FILE: &str = "/Library/LaunchDaemons/net.mullvad.daemon.plist";
 
 #[cfg(target_os = "windows")]
-const MULLVAD_WIN_REGISTRY: &str = r"SYSTEM\CurrentControlSet\Services\Mullvad VPN";
+const MULLVAD_WIN_REGISTRY: &str = r"SYSTEM\CurrentControlSet\Services\Rostam VPN";
 
 #[cfg(target_os = "windows")]
 pub fn reboot() -> Result<(), test_rpc::Error> {
@@ -205,7 +205,7 @@ ExecStart=/usr/bin/mullvad-daemon --disable-stdout-timestamps {verbosity}"#
     Ok(())
 }
 
-/// Restart the Mullvad VPN application.
+/// Restart the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "linux")]
@@ -219,7 +219,7 @@ pub async fn restart_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Stop the Mullvad VPN application.
+/// Stop the Rostam VPN application.
 ///
 /// This function waits for the app to successfully shut down.
 #[cfg(target_os = "linux")]
@@ -234,7 +234,7 @@ pub async fn stop_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Start the Mullvad VPN application.
+/// Start the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "linux")]
@@ -248,7 +248,7 @@ pub async fn start_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Restart the Mullvad VPN application.
+/// Restart the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "windows")]
@@ -258,7 +258,7 @@ pub async fn restart_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Stop the Mullvad VPN application.
+/// Stop the Rostam VPN application.
 ///
 /// This function waits for the app to successfully shut down.
 #[cfg(target_os = "windows")]
@@ -271,7 +271,7 @@ pub async fn stop_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Start the Mullvad VPN application.
+/// Start the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "windows")]
@@ -284,7 +284,7 @@ pub async fn start_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Restart the Mullvad VPN application.
+/// Restart the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "macos")]
@@ -294,7 +294,7 @@ pub async fn restart_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Stop the Mullvad VPN application.
+/// Stop the Rostam VPN application.
 ///
 /// This function waits for the app to successfully shut down.
 #[cfg(target_os = "macos")]
@@ -304,7 +304,7 @@ pub async fn stop_app() -> Result<(), test_rpc::Error> {
     Ok(())
 }
 
-/// Start the Mullvad VPN application.
+/// Start the Rostam VPN application.
 ///
 /// This function waits for the app to successfully start again.
 #[cfg(target_os = "macos")]
@@ -352,7 +352,7 @@ pub async fn set_daemon_log_level(verbosity_level: Verbosity) -> Result<(), test
         .query_config()
         .map_err(|e| test_rpc::Error::Service(e.to_string()))?;
 
-    let executable_path = "C:\\Program Files\\Mullvad VPN\\resources\\mullvad-daemon.exe";
+    let executable_path = "C:\\Program Files\\Rostam VPN\\resources\\mullvad-daemon.exe";
     let launch_arguments = vec![
         OsString::from("--run-as-service"),
         OsString::from(verbosity),
@@ -491,7 +491,7 @@ pub async fn set_daemon_environment(env: HashMap<String, String>) -> Result<(), 
     let hklm = RegKey::predef(HKEY_LOCAL_MACHINE);
     let path = Path::new(MULLVAD_WIN_REGISTRY).join("Environment");
     let (registry, _) = hklm.create_subkey(&path).map_err(|error| {
-        test_rpc::Error::Registry(format!("Failed to open Mullvad VPN subkey: {}", error))
+        test_rpc::Error::Registry(format!("Failed to open Rostam VPN subkey: {}", error))
     })?;
     for (k, v) in env {
         registry.set_value(k, &v).map_err(|error| {
@@ -621,7 +621,7 @@ pub async fn get_daemon_environment() -> Result<HashMap<String, String>, test_rp
         tokio::task::spawn_blocking(|| -> Result<HashMap<String, String>, test_rpc::Error> {
             let hklm = RegKey::predef(HKEY_LOCAL_MACHINE);
             let key = hklm.open_subkey(MULLVAD_WIN_REGISTRY).map_err(|error| {
-                test_rpc::Error::Registry(format!("Failed to open Mullvad VPN subkey: {}", error))
+                test_rpc::Error::Registry(format!("Failed to open Rostam VPN subkey: {}", error))
             })?;
 
             // The Strings will be quoted (surrounded by ") when read from the registry - we should trim that!

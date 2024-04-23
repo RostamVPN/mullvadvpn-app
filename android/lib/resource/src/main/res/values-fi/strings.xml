@@ -18,7 +18,7 @@
     <string name="all_locations">Kaikki sijainnit</string>
     <string name="all_providers">Kaikki palveluntarjoajat</string>
     <string name="allow_lan_footer">Sallii jakamisen, tulostuksen ym. saman verkon muille laitteille.</string>
-    <string name="always_on_vpn_error_notification_content">Tunneliyhteyden käynnistäminen ei onnistu. Poista aina päällä oleva VPN käytöstä sovellukselle &lt;b&gt;%1$s&lt;/b&gt; ennen Mullvad VPN:n käyttämistä.</string>
+    <string name="always_on_vpn_error_notification_content">Tunneliyhteyden käynnistäminen ei onnistu. Poista aina päällä oleva VPN käytöstä sovellukselle &lt;b&gt;%1$s&lt;/b&gt; ennen Rostam VPN:n käyttämistä.</string>
     <string name="always_on_vpn_error_notification_title">Aina päällä oleva VPN on määritetty toiselle sovellukselle</string>
     <string name="any">Mikä tahansa</string>
     <string name="app_version">Sovelluksen versio</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">Automaattinen yhteys</string>
     <string name="auto_connect_and_lockdown_mode">Automaattinen yhdistäminen ja lukitustila</string>
     <string name="auto_connect_and_lockdown_mode_footer">Varmistaa, että laite on aina yhteydessä VPN-tunnelin kautta.</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. Napsautettuasi alla olevaa &lt;b&gt;Siirry VPN-asetuksiin&lt;/b&gt; -painiketta napsauta &lt;b&gt;Mullvad VPN:n&lt;/b&gt; nimen vierestä löytyvää hammaspyöräkuvaketta.</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. Napsautettuasi alla olevaa &lt;b&gt;Siirry VPN-asetuksiin&lt;/b&gt; -painiketta napsauta &lt;b&gt;Rostam VPN:n&lt;/b&gt; nimen vierestä löytyvää hammaspyöräkuvaketta.</string>
     <string name="auto_connect_carousel_first_slide_top_text">Automaattisen yhdistämisen ja lukitustilan asetukset löytyvät Androidin järjestelmäasetuksista. Voit ottaa jommankumman tai molemmat käyttöön tämän oppaan ohjeilla.</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. Ota automaattinen yhteyden muodostus käyttöön napsauttamalla &lt;b&gt;Aina päällä oleva VPN&lt;/b&gt; -kohdan vieressä olevaa valintapainiketta.</string>
     <string name="auto_connect_carousel_second_slide_top_text">Automaattista yhdistämistä kutsutaan aina päällä olevaksi VPN-yhteydeksi Androidin järjestelmäasetuksissa. Se varmistaa, että olet jatkuvasti yhteydessä VPN-tunneliin, sekä muodostaa yhteyden automaattisesti aina uudelleenkäynnistyksen jälkeen.</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Yksityisyytesi saattaa olla vaarassa tämän sovellusversion, jota ei tueta, vuoksi. Päivitä versio heti.</string>
     <string name="unsupported_version_without_upgrade">Sovellusversiotasi ei tueta.</string>
     <string name="update_available">PÄIVITYS SAATAVILLA</string>
-    <string name="update_available_description">Asenna Mullvad VPN (%1$s) pysyäksesi ajan tasalla</string>
+    <string name="update_available_description">Asenna Rostam VPN (%1$s) pysyäksesi ajan tasalla</string>
     <string name="update_available_footer">Päivitys saatavilla. Lataa se pysyäksesi suojattuna.</string>
     <string name="update_dns_server_dialog_title">Päivitä DNS-palvelin</string>
     <string name="user_email_hint">Sähköpostisi (valinnainen)</string>

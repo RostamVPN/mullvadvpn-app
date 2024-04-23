@@ -1,6 +1,6 @@
 # Logging and telemetry
 
-The primary focus of the Mullvad VPN app is of course the users' privacy and anonymity.
+The primary focus of the Rostam VPN app is of course the users' privacy and anonymity.
 For the purpose of debugging issues and in order to alert users who might be at risk, some
 logging and minimal telemetry is being performed.
 

@@ -1,6 +1,6 @@
 # Split tunneling
 
-Split tunneling allows excluding selected apps from the VPN tunnel. These apps will communicate with the network as if Mullvad VPN was disconnected or not even running.
+Split tunneling allows excluding selected apps from the VPN tunnel. These apps will communicate with the network as if Rostam VPN was disconnected or not even running.
 
 ## Vocabulary
 

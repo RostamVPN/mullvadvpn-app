@@ -84,7 +84,7 @@ function generate_rpm_repository_configuration {
     local repository_dir=$1
     local stable_or_beta=$2
 
-    local repository_name="Mullvad VPN"
+    local repository_name="Rostam VPN"
     if [[ "$stable_or_beta" == "beta" ]]; then
         repository_name+=" (beta)"
     fi

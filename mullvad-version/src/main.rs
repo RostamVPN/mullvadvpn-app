@@ -36,7 +36,7 @@ fn to_semver(version: &str) -> String {
     format!("{version}.0{remainder}")
 }
 
-/// Takes a version in the normal Mullvad VPN app version format and returns the Android
+/// Takes a version in the normal Rostam VPN app version format and returns the Android
 /// `versionCode` formatted version.
 ///
 /// The format of the code is:           YYVV00XX

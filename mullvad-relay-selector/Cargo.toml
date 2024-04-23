@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-relay-selector"
-description = "Mullvad VPN relay selector"
+description = "Rostam VPN relay selector"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

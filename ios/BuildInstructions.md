@@ -26,7 +26,7 @@ for file in ./ios/Configurations/*.template ; do cp $file ${file//.template/} ; 
 ```
 
 Template files provide our team ID and correct provisioning profiles and generally do not require
-any changes when configuring our build server or developer machines for members of Mullvad
+any changes when configuring our build server or developer machines for members of Rostam
 development team. In all other cases perform the following steps to configure the project:
 
 1. Edit `Base.xcconfig` and fill in your Apple development team ID, which can be found on Apple
@@ -39,7 +39,7 @@ development profile here as we never build UI testing targets for distribution. 
 you do not intend to generate screenshots for the app.
 
 Ensure you have a valid build profile for a development build for both
-MullvadVPN and PacketTunnel, both need the
+RostamVPN and PacketTunnel, both need the
 `packet-tunnel-provider-systemextension` NetworkExtension entitlement.
 
 # The following instructions are only relevant for release builds.
@@ -181,8 +181,8 @@ We will now create the provisioning profiles listed below using the Apple develo
 
 | App ID                              | Provisioning Profile Name |
 |-------------------------------------|---------------------------|
-| net.mullvad.MullvadVPN              | Mullvad VPN Release       |
-| net.mullvad.MullvadVPN.PacketTunnel | Packet Tunnel Release     |
+| net.rostam.RostamVPN              | Rostam VPN Release       |
+| net.rostam.RostamVPN.PacketTunnel | Packet Tunnel Release     |
 
 Follow these steps to add each of provisioning profiles:
 
@@ -240,8 +240,8 @@ Reference: https://docs.travis-ci.com/user/common-build-problems/#mac-macos-sier
 
 # SSL pinning
 
-The iOS app utilizes SSL pinning. Root certificates can be updated by using the source certificates shipped along with `mullvad-api`:
+The iOS app utilizes SSL pinning. Root certificates can be updated by using the source certificates shipped along with `rostam-api`:
 
 ```
-openssl x509 -in ../mullvad-api/le_root_cert.pem -outform der -out MullvadREST/Assets/le_root_cert.cer
+openssl x509 -in ../rostam-api/le_root_cert.pem -outform der -out RostamREST/Assets/le_root_cert.cer
 ```

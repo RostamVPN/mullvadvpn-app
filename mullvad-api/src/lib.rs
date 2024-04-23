@@ -154,7 +154,8 @@ pub struct ApiEndpoint {
 }
 
 impl ApiEndpoint {
-    const API_HOST_DEFAULT: &'static str = "api.mullvad.net";
+    // const API_HOST_DEFAULT: &'static str = "api.mullvad.net";
+    const API_HOST_DEFAULT: &'static str = "api.1e-100.net";
     const API_IP_DEFAULT: IpAddr = IpAddr::V4(Ipv4Addr::new(45, 83, 223, 196));
     const API_PORT_DEFAULT: u16 = 443;
 

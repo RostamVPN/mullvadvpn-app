@@ -192,7 +192,7 @@ export function shouldShowApplication(application: DesktopEntry): application is
 
   return (
     application.type === 'Application' &&
-    application.name !== 'Mullvad VPN' &&
+    application.name !== 'Rostam VPN' &&
     application.exec !== undefined &&
     application.noDisplay !== 'true' &&
     application.terminal !== 'true' &&
@@ -281,7 +281,7 @@ function getGtkThemeDirectories(): Promise<DirectoryDescription[]> {
 }
 
 // Searches through a directory tree according to the directory lists supplied. E.g. The arguments
-// ('mullvad', ['svg', 'png'], [['a', 'b'], ['c', 'd']]) will search for mullvad.svg and mullvad.png
+// ('rostam', ['svg', 'png'], [['a', 'b'], ['c', 'd']]) will search for rostam.svg and rostam.png
 // in the directories a, a/c, a/d, b, b/c and b/d.
 async function findIcon(
   name: string,

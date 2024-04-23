@@ -856,8 +856,8 @@ msgid "If these steps do not work please send a problem report."
 msgstr "Als deze stappen niet werken, stuur dan een probleemrapport."
 
 msgctxt "launch-view"
-msgid "Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting."
-msgstr "De toestemming voor de Mullvad VPN-service is ingetrokken. Ga naar Systeeminstellingen en sta Mullvad VPN toe onder de instelling \"Sta toe op de achtergrond\"."
+msgid "Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting."
+msgstr "De toestemming voor de Rostam VPN-service is ingetrokken. Ga naar Systeeminstellingen en sta Rostam VPN toe onder de instelling \"Sta toe op de achtergrond\"."
 
 msgctxt "launch-view"
 msgid "Reinstalling the app."
@@ -1759,8 +1759,8 @@ msgid "Adult content"
 msgstr "Content voor volwassenen"
 
 msgctxt "vpn-settings-view"
-msgid "Attention: enabling this will always require a Mullvad VPN connection in order to reach the internet."
-msgstr "Let op: dit inschakelen vereist altijd een Mullvad VPN-verbinding om het internet te bereiken."
+msgid "Attention: enabling this will always require a Rostam VPN connection in order to reach the internet."
+msgstr "Let op: dit inschakelen vereist altijd een Rostam VPN-verbinding om het internet te bereiken."
 
 msgctxt "vpn-settings-view"
 msgid "Attention: this setting cannot be used in combination with <b>%(customDnsFeatureName)s</b>"
@@ -1870,8 +1870,8 @@ msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill
 msgstr "Het verschil tussen de Killswitch en de Lockdownmodus is dat de Killswitch voorkomt dat er lekken ontstaan tijdens automatische herverbindingen van tunnels, softwarecrashes en soortgelijke ongelukken."
 
 msgctxt "vpn-settings-view"
-msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "Het verschil tussen de Killswitch en de Lockdownmodus is dat de Killswitch voorkomt dat er lekken ontstaan tijdens automatische herverbindingen van tunnels, softwarecrashes en soortgelijke ongelukken. Met de Lockdownmodus ingeschakeld, moet u verbonden zijn met een Mullvad VPN-server om het internet te kunnen bereiken. Wanneer u handmatig de verbinding van de app verbreekt of de app afsluit, wordt uw verbinding geblokkeerd."
+msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "Het verschil tussen de Killswitch en de Lockdownmodus is dat de Killswitch voorkomt dat er lekken ontstaan tijdens automatische herverbindingen van tunnels, softwarecrashes en soortgelijke ongelukken. Met de Lockdownmodus ingeschakeld, moet u verbonden zijn met een Rostam VPN-server om het internet te kunnen bereiken. Wanneer u handmatig de verbinding van de app verbreekt of de app afsluit, wordt uw verbinding geblokkeerd."
 
 msgctxt "vpn-settings-view"
 msgid "The DNS server you want to add is a private IP. You must ensure that your network interfaces are configured to use it."
@@ -1927,8 +1927,8 @@ msgid "When this feature is enabled, IPv6 can be used alongside IPv4 in the VPN 
 msgstr "Als deze functie is ingeschakeld, kan IPv6 naast IPv4 worden gebruikt in de VPN-tunnel om te communiceren met internetdiensten."
 
 msgctxt "vpn-settings-view"
-msgid "With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "Met de Lockdownmodus ingeschakeld, moet u verbonden zijn met een Mullvad VPN-server om het internet te kunnen bereiken. Wanneer u handmatig de verbinding van de app verbreekt of de app afsluit, wordt uw verbinding geblokkeerd."
+msgid "With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "Met de Lockdownmodus ingeschakeld, moet u verbonden zijn met een Rostam VPN-server om het internet te kunnen bereiken. Wanneer u handmatig de verbinding van de app verbreekt of de app afsluit, wordt uw verbinding geblokkeerd."
 
 #. Title label in navigation bar
 #. Available placeholders:
@@ -2018,8 +2018,8 @@ msgctxt "Message to indicate how much time was added to an account as part of an
 msgid "%s was added to your account."
 msgstr "%s is toegevoegd aan uw account."
 
-msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Mullvad VPN</b> name."
-msgstr "1. Klik nadat u op de knop <b>Naar VPN-instellingen</b> hebt geklikt op het tandwiel naast de naam <b>Mullvad VPN</b>."
+msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Rostam VPN</b> name."
+msgstr "1. Klik nadat u op de knop <b>Naar VPN-instellingen</b> hebt geklikt op het tandwiel naast de naam <b>Rostam VPN</b>."
 
 msgid "2. To enable Auto-connect, click on the toggle next to <b>Always-on VPN</b>."
 msgstr "2. Klik om Automatisch verbinden in te schakelen op de schakelaar naast <b>Altijd-aan VPN</b>."
@@ -2129,8 +2129,8 @@ msgstr "Google Play niet beschikbaar"
 msgid "If the split tunneling feature is used, then the app queries your system for a list of all installed applications. This list is only retrieved in the split tunneling view. The list of installed applications is never sent from the device."
 msgstr "Als de split-tunnelingfunctie wordt gebruikt, vraagt de app het systeem om een lijst van alle geïnstalleerde toepassingen. Deze lijst wordt alleen opgehaald in de split-tunnelingweergave. De lijst van geïnstalleerde toepassingen wordt nooit verzonden vanaf het apparaat."
 
-msgid "Install Mullvad VPN (%s) to stay up to date"
-msgstr "Installeer Mullvad VPN (%s) om up-to-date te blijven"
+msgid "Install Rostam VPN (%s) to stay up to date"
+msgstr "Installeer Rostam VPN (%s) om up-to-date te blijven"
 
 msgid "Makes sure the device is always on the VPN tunnel."
 msgstr "Zorg dat het apparaat altijd de VPN-tunnel gebruikt."
@@ -2213,8 +2213,8 @@ msgstr "VPN in-/uitschakelen"
 msgid "Unable to apply firewall rules. Please troubleshoot or send a problem report."
 msgstr "Kan firewallregels niet toepassen. Los problemen op of stuur een probleemmelding."
 
-msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Mullvad VPN."
-msgstr "Kan de tunnelverbinding niet starten. Schakel Altijd-aan VPN uit voor <b>%s</b> voordat u Mullvad VPN gebruikt."
+msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Rostam VPN."
+msgstr "Kan de tunnelverbinding niet starten. Schakel Altijd-aan VPN uit voor <b>%s</b> voordat u Rostam VPN gebruikt."
 
 msgid "Unsecured"
 msgstr "Niet beveiligd"

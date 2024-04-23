@@ -1,6 +1,6 @@
-# Mullvad VPN app security
+# Rostam VPN app security
 
-This document describes the security properties of the Mullvad VPN app. It describes it for all
+This document describes the security properties of the Rostam VPN app. It describes it for all
 platforms and their differences. Individual platforms might have slightly different properties and
 allow or block network traffic a bit differently, but all such deviations are described here.
 

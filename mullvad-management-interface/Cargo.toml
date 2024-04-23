@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-management-interface"
-description = "Mullvad VPN IPC. Contains types and functions for IPC clients and servers."
+description = "Rostam VPN IPC. Contains types and functions for IPC clients and servers."
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

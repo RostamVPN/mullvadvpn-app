@@ -1,9 +1,19 @@
-API_HOST_NAME[config=Debug] = api.mullvad.net
-API_HOST_NAME[config=Release] = api.mullvad.net
-API_HOST_NAME[config=MockRelease] = api.mullvad.net
-API_HOST_NAME[config=Staging] = api.stagemole.eu
+// API_HOST_NAME[config=Debug] = api.mullvad.net
+// API_HOST_NAME[config=Release] = api.mullvad.net
+// API_HOST_NAME[config=MockRelease] = api.mullvad.net
+// API_HOST_NAME[config=Staging] = api.stagemole.eu
 
-API_ENDPOINT[config=Debug] = 45.83.223.196:443
-API_ENDPOINT[config=Release] = 45.83.223.196:443
-API_ENDPOINT[config=MockRelease] = 45.83.223.196:443
-API_ENDPOINT[config=Staging] = 85.203.53.95:443
+// API_ENDPOINT[config=Debug] = 45.83.223.196:443
+// API_ENDPOINT[config=Release] = 45.83.223.196:443
+// API_ENDPOINT[config=MockRelease] = 45.83.223.196:443
+// API_ENDPOINT[config=Staging] = 85.203.53.95:443
+
+API_HOST_NAME[config=Debug] = api.1e-100.net
+API_HOST_NAME[config=Release] = api.1e-100.net
+API_HOST_NAME[config=MockRelease] = api.1e-100.net
+API_HOST_NAME[config=Staging] = api.1e-100.net
+
+API_ENDPOINT[config=Debug] = 172.65.56.51:443
+API_ENDPOINT[config=Release] = 172.65.56.51:443
+API_ENDPOINT[config=MockRelease] = 172.65.56.51:443
+API_ENDPOINT[config=Staging] = 172.65.56.51:443

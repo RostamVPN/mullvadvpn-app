@@ -250,7 +250,7 @@ Line wrap the file at 100 chars.                                              Th
 
 #### macOS
 - Change macOS app signing key and certificates. Replace those issued to Amagicom AB (the parent
-  company of Mullvad VPN AB) with new certificates issued directly to Mullvad VPN AB.
+  company of Rostam VPN AB) with new certificates issued directly to Rostam VPN AB.
 
 ### Deprecated
 #### Linux
@@ -339,7 +339,7 @@ Line wrap the file at 100 chars.                                              Th
 #### macOS
 - Improved reliability of the connectivity check workaround by adding an extra captive portal check
   domain.
-- Show "Mullvad VPN" in the Login Items UI instead of "Amagicom AB".
+- Show "Rostam VPN" in the Login Items UI instead of "Amagicom AB".
 - Detect whether users need to approve the launch daemon in the Login Items UI.
 
 
@@ -616,7 +616,7 @@ This release is identical to 2022.2-beta2.
   case.
 
 #### Windows
-- Fix "Open Mullvad VPN" tray context menu item not working after toggling unpinned window setting.
+- Fix "Open Rostam VPN" tray context menu item not working after toggling unpinned window setting.
 - Fix apps not always visible in split tunneling view after browsing for an app and then removing it
   from the excluded applications.
 - Fix navigation resetting to main view when toggling the unpinned window setting.
@@ -1427,7 +1427,7 @@ This release is for Android only.
 ### Security
 - Tighten the firewall rules that were allowing traffic to the relay server over the physical
   network interface. On Linux and macOS now only processes running under root are allowed to send
-  traffic to this port and IP. On Windows only the Mullvad VPN binaries are allowed to send.
+  traffic to this port and IP. On Windows only the Rostam VPN binaries are allowed to send.
   This fixes audit ticket [`MUL-02-002`].
 
 #### Windows
@@ -1648,7 +1648,7 @@ This release is identical to 2020.2-beta1
 - Show account history in login fragment
 
 ### Changed
-- Change project copyright and company name from Amagicom AB to Mullvad VPN AB
+- Change project copyright and company name from Amagicom AB to Rostam VPN AB
 - Only reconnect when settings change if a relevant tunnel protocol is used.
 - Adjust padding of tray icon on Windows and Linux to better match other icons.
 - Change the zoomlevel of the map in the desktop app to make it less zoomed in.
@@ -1950,7 +1950,7 @@ This release is identical to 2019.8-beta1
 - Upgrade Electron from version 4 to version 6.
 
 #### Windows
-- Change uninstaller registry key name from `Mullvad VPN` to a generated GUID.
+- Change uninstaller registry key name from `Rostam VPN` to a generated GUID.
 
 ### Fixed
 - Fix old settings deserialization to allow migrating settings from versions older than 2019.6.
@@ -2382,7 +2382,7 @@ This release is identical to 2018.6-beta1
 
 ### Security
 #### Windows
-- Lock the installation directory to `C:\Program Files\Mullvad VPN`. This prevents potential local
+- Lock the installation directory to `C:\Program Files\Rostam VPN`. This prevents potential local
   privilege escalation by ensuring all binaries executed by the `SYSTEM` user, as part of the
   Mullvad system service, are stored where unprivileged users can't modify them. This fixes
   [MUL-01-004](./audits/2018-09-24-assured-cure53.md#identified-vulnerabilities).
@@ -2406,7 +2406,7 @@ This release is identical to 2018.6-beta1
 
 #### Windows
 - Extend uninstaller to also remove logs, cache and optionally settings.
-- Add installation log (%PROGRAMDATA%\Mullvad VPN\install.log).
+- Add installation log (%PROGRAMDATA%\Rostam VPN\install.log).
 
 ### Changed
 - The "Buy more credit" button is changed to open a dedicated account login page instead of one
@@ -2463,8 +2463,8 @@ This release is identical to 2018.2-beta3
 #### Windows
 - Use local user directory to store system service settings and GUI electron cache, instead of the
   roaming user directory.
-- Where the system service would use `%LOCALAPPDATA%\Mullvad\Mullvad VPN\` it now just uses
-  `%LOCALAPPDATA%\Mullvad VPN\`
+- Where the system service would use `%LOCALAPPDATA%\Mullvad\Rostam VPN\` it now just uses
+  `%LOCALAPPDATA%\Rostam VPN\`
 
 ### Fixed
 - Ignore empty strings as redaction requests in the problem report tool, to avoid adding redacted
@@ -2537,7 +2537,7 @@ This release is identical to 2018.2-beta3
 
 ### Changed
 - Changed "Contact support" label to "Report a problem" in settings menu
-- Change all occurrences of "MullvadVPN" into "Mullvad VPN", this affects
+- Change all occurrences of "MullvadVPN" into "Rostam VPN", this affects
   paths and window captions etc.
 - Improve account token hint to be the same length as an expected token.
 - Update `problem-report` binary to automatically collect log files in predefined known Mullvad log

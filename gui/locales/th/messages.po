@@ -850,8 +850,8 @@ msgid "If these steps do not work please send a problem report."
 msgstr "หากขั้นตอนเหล่านี้ใช้ไม่ได้ผล โปรดส่งรายงานปัญหา"
 
 msgctxt "launch-view"
-msgid "Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting."
-msgstr "สิทธิ์การเข้าถึงบริการ Mullvad VPN ได้ถูกเพิกถอนแล้ว โปรดเข้าไปยังการตั้งค่าระบบ แล้วให้สิทธิ์อนุญาต Mullvad VPN ภายใต้การตั้งค่า \"อนุญาตในพื้นหลัง\""
+msgid "Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting."
+msgstr "สิทธิ์การเข้าถึงบริการ Rostam VPN ได้ถูกเพิกถอนแล้ว โปรดเข้าไปยังการตั้งค่าระบบ แล้วให้สิทธิ์อนุญาต Rostam VPN ภายใต้การตั้งค่า \"อนุญาตในพื้นหลัง\""
 
 msgctxt "launch-view"
 msgid "Reinstalling the app."
@@ -1753,8 +1753,8 @@ msgid "Adult content"
 msgstr "เนื้อหาสำหรับผู้ใหญ่"
 
 msgctxt "vpn-settings-view"
-msgid "Attention: enabling this will always require a Mullvad VPN connection in order to reach the internet."
-msgstr "โปรดทราบ: การเปิดใช้งานสิ่งนี้จะทำให้คุณจำเป็นต้องเชื่อมต่อ Mullvad VPN ไว้ตลอดเวลา เพื่อที่จะเข้าถึงอินเทอร์เน็ต"
+msgid "Attention: enabling this will always require a Rostam VPN connection in order to reach the internet."
+msgstr "โปรดทราบ: การเปิดใช้งานสิ่งนี้จะทำให้คุณจำเป็นต้องเชื่อมต่อ Rostam VPN ไว้ตลอดเวลา เพื่อที่จะเข้าถึงอินเทอร์เน็ต"
 
 msgctxt "vpn-settings-view"
 msgid "Attention: this setting cannot be used in combination with <b>%(customDnsFeatureName)s</b>"
@@ -1864,8 +1864,8 @@ msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill
 msgstr "ความแตกต่างระหว่างคิลสวิตช์ และโหมดล็อกดาวน์ก็คือ คิลสวิตช์จะป้องกันไม่ให้มีข้อมูลรั่วไหว ในระหว่างการเชื่อมต่ออุโมงค์อัตโนมัติใหม่อีกครั้ง ซอฟต์แวร์ล้มเหลว และอุบัติเหตุที่คล้ายคลึงกัน"
 
 msgctxt "vpn-settings-view"
-msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "ความแตกต่างระหว่างคิลสวิตช์ และโหมดล็อกดาวน์ก็คือ คิลสวิตช์จะป้องกันไม่ให้มีข้อมูลรั่วไหว ในระหว่างการเชื่อมต่ออุโมงค์อัตโนมัติใหม่อีกครั้ง ซอฟต์แวร์ล้มเหลว และอุบัติเหตุที่คล้ายคลึงกัน เมื่อเปิดใช้งานโหมดล็อกดาวน์ คุณจำเป็นต้องเชื่อมต่อเซิร์ฟเวอร์ Mullvad VPN เพื่อเข้าถึงอินเทอร์เน็ต ทั้งนี้การตัดการเชื่อมต่อด้วยตนเอง หรือออกจากแอป จะเป็นบล็อกการเชื่อมต่อของคุณ"
+msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "ความแตกต่างระหว่างคิลสวิตช์ และโหมดล็อกดาวน์ก็คือ คิลสวิตช์จะป้องกันไม่ให้มีข้อมูลรั่วไหว ในระหว่างการเชื่อมต่ออุโมงค์อัตโนมัติใหม่อีกครั้ง ซอฟต์แวร์ล้มเหลว และอุบัติเหตุที่คล้ายคลึงกัน เมื่อเปิดใช้งานโหมดล็อกดาวน์ คุณจำเป็นต้องเชื่อมต่อเซิร์ฟเวอร์ Rostam VPN เพื่อเข้าถึงอินเทอร์เน็ต ทั้งนี้การตัดการเชื่อมต่อด้วยตนเอง หรือออกจากแอป จะเป็นบล็อกการเชื่อมต่อของคุณ"
 
 msgctxt "vpn-settings-view"
 msgid "The DNS server you want to add is a private IP. You must ensure that your network interfaces are configured to use it."
@@ -1921,8 +1921,8 @@ msgid "When this feature is enabled, IPv6 can be used alongside IPv4 in the VPN 
 msgstr "ในขณะที่เปิดใช้งานคุณลักษณะนี้ คุณจะสามารถใช้งาน IPv6 ร่วมกับ IPv4 ในอุโมงค์ VPN เพื่อสื่อสารกับบริการอินเทอร์เน็ตได้"
 
 msgctxt "vpn-settings-view"
-msgid "With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "เมื่อเปิดใช้งานโหมดล็อกดาวน์ คุณจำเป็นต้องเชื่อมต่อเซิร์ฟเวอร์ Mullvad VPN เพื่อเข้าถึงอินเทอร์เน็ต ทั้งนี้การตัดการเชื่อมต่อด้วยตนเอง หรือออกจากแอป จะเป็นบล็อกการเชื่อมต่อของคุณ"
+msgid "With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "เมื่อเปิดใช้งานโหมดล็อกดาวน์ คุณจำเป็นต้องเชื่อมต่อเซิร์ฟเวอร์ Rostam VPN เพื่อเข้าถึงอินเทอร์เน็ต ทั้งนี้การตัดการเชื่อมต่อด้วยตนเอง หรือออกจากแอป จะเป็นบล็อกการเชื่อมต่อของคุณ"
 
 #. Title label in navigation bar
 #. Available placeholders:
@@ -2012,8 +2012,8 @@ msgctxt "Message to indicate how much time was added to an account as part of an
 msgid "%s was added to your account."
 msgstr "%s ถูกเพิ่มลงในบัญชีของคุณแล้ว"
 
-msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Mullvad VPN</b> name."
-msgstr "1. หลังจากคลิกปุ่ม<b>ไปที่การตั้งค่า VPN</b> ที่ด้านล่าง ให้คลิกล้อเฟืองที่อยู่ถัดจากชื่อ <b>Mullvad VPN</b>"
+msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Rostam VPN</b> name."
+msgstr "1. หลังจากคลิกปุ่ม<b>ไปที่การตั้งค่า VPN</b> ที่ด้านล่าง ให้คลิกล้อเฟืองที่อยู่ถัดจากชื่อ <b>Rostam VPN</b>"
 
 msgid "2. To enable Auto-connect, click on the toggle next to <b>Always-on VPN</b>."
 msgstr "2. ในการเปิดใช้การเชื่อมต่ออัตโนมัติ ให้คลิกปุ่มเปิด/ปิดที่อยู่ถัดจาก <b>Always-on VPN</b>"
@@ -2123,8 +2123,8 @@ msgstr "Google Play ไม่พร้อมใช้งาน"
 msgid "If the split tunneling feature is used, then the app queries your system for a list of all installed applications. This list is only retrieved in the split tunneling view. The list of installed applications is never sent from the device."
 msgstr "หากมีการใช้งานคุณลักษณะการแยกอุโมงค์ แอปจะขอให้ระบบของคุณระบุแอปพลิเคชันที่ติดตั้งไว้ทั้งหมด รายการนี้จะได้รับการเรียกใช้งานในมุมมองการแยกอุโมงค์เท่านั้น รายการแอปพลิเคชันที่ติดตั้งไว้ทั้งหมด จะไม่ถูกส่งออกจากอุปกรณ์"
 
-msgid "Install Mullvad VPN (%s) to stay up to date"
-msgstr "ติดตั้ง Mullvad VPN (%s) เพื่อรับอัปเดตล่าสุดอยู่เสมอ"
+msgid "Install Rostam VPN (%s) to stay up to date"
+msgstr "ติดตั้ง Rostam VPN (%s) เพื่อรับอัปเดตล่าสุดอยู่เสมอ"
 
 msgid "Makes sure the device is always on the VPN tunnel."
 msgstr "ตรวจสอบให้แน่ใจว่า อุปกรณ์อยู่ในช่องทาง VPN เสมอ"
@@ -2207,8 +2207,8 @@ msgstr "เปิด/ปิด VPN"
 msgid "Unable to apply firewall rules. Please troubleshoot or send a problem report."
 msgstr "ไม่สามารถใช้กฎไฟร์วอลล์ได้ โปรดแก้ไขปัญหา หรือส่งรายงานปัญหา"
 
-msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Mullvad VPN."
-msgstr "ไม่สามารถเริ่มการเชื่อมต่ออุโมงค์ได้ โปรดปิดใช้งาน Always-on VPN เป็นเวลา <b>%s</b> ก่อนที่จะใช้งาน Mullvad VPN"
+msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Rostam VPN."
+msgstr "ไม่สามารถเริ่มการเชื่อมต่ออุโมงค์ได้ โปรดปิดใช้งาน Always-on VPN เป็นเวลา <b>%s</b> ก่อนที่จะใช้งาน Rostam VPN"
 
 msgid "Unsecured"
 msgstr "ไม่ปลอดภัย"

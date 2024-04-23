@@ -18,7 +18,7 @@
     <string name="all_locations">တည်နေရာအာလုံး</string>
     <string name="all_providers">ပံ့ပိုးသူအားလုံး</string>
     <string name="allow_lan_footer">ဝေမျှရန်၊ ပရင့်ထုတ်ရန်စသည်တို့အတွက် တူညီသည့် ကွန်ရက်ရှိ အခြားစက်များကို ရယူသုံးစွဲခွင့်ပြုပေးပါသည်။</string>
-    <string name="always_on_vpn_error_notification_content">Tunnel ချိတ်ဆက်မှုကို စတင်၍ မရနိုင်ပါ။ Mullvad VPN ကို မသုံးမီ &lt;b&gt;%1$s&lt;/b&gt; အတွက် VPN အမြဲဖွင့်ထားမှုကို ပိတ်ပေးပါ။</string>
+    <string name="always_on_vpn_error_notification_content">Tunnel ချိတ်ဆက်မှုကို စတင်၍ မရနိုင်ပါ။ Rostam VPN ကို မသုံးမီ &lt;b&gt;%1$s&lt;/b&gt; အတွက် VPN အမြဲဖွင့်ထားမှုကို ပိတ်ပေးပါ။</string>
     <string name="always_on_vpn_error_notification_title">အမြဲဖွင့် VPN ကို အခြားအက်ပ်တစ်ခုသို့ သတ်မှတ်ထားပါသည်</string>
     <string name="any">တစ်ခုခု</string>
     <string name="app_version">အက်ပ်ဗားရှင်း</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">အော်တို ချိတ်ဆက်မှု</string>
     <string name="auto_connect_and_lockdown_mode">အော်တို ချိတ်ဆက်မှု နှင့် လော့ခ်ဒေါင်းစနစ်</string>
     <string name="auto_connect_and_lockdown_mode_footer">စက်သည် VPN Tunnel ကို အမြဲဖွင့်ထားကြောင်း သေချာပါစေ။</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. အောက်ရှိ &lt;b&gt;VPN ဆက်တင်များသို့ သွားရန်&lt;/b&gt; ခလုတ်ကို နှိပ်ပြီးနောက် &lt;b&gt;Mullvad VPN&lt;/b&gt; အမည်ဘေးရှိ ခွေးသွားစိတ်ပုံကို နှိပ်ပါ။</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. အောက်ရှိ &lt;b&gt;VPN ဆက်တင်များသို့ သွားရန်&lt;/b&gt; ခလုတ်ကို နှိပ်ပြီးနောက် &lt;b&gt;Rostam VPN&lt;/b&gt; အမည်ဘေးရှိ ခွေးသွားစိတ်ပုံကို နှိပ်ပါ။</string>
     <string name="auto_connect_carousel_first_slide_top_text">အော်တို ချိတ်ဆက်မှုနှင့် လော့ခ်ဒေါင်းစနစ် ဆက်တင်များကို Android စနစ် ဆက်တင်များတွင် ရှာတွေ့နိုင်ပြီး တစ်ခု သို့မဟုတ် နှစ်ခုလုံးကို ဖွင့်ရန် ဤလမ်းညွှန်ချက်ကို လိုက်နာပါ။</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. အော်တို ချိတ်ဆက်မှု ဖွင့်ရန် &lt;b&gt;အမြဲဖွင့် VPN&lt;/b&gt; ဘေးရှိ ဖွင့်/ပိတ် ခလုတ်ကို နှိပ်ပါ။</string>
     <string name="auto_connect_carousel_second_slide_top_text">Android စနစ် ဆက်တင်တွင် အော်တိုချိတ်ဆက်မှုကို အမြဲဖွင့် VPN ဟုခေါ်ပြီး VPN Tunnel ကို အမြဲချိတ်ဆက်ထားကြောင်း သေချာစေပြီး အစမှ ပြန်ဖွင့်ပြီးနောက် အော်တို ချိတ်ဆက်ပါသည်။</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">တွဲဖက်မလုပ်ဆောင်နိုင်သည့် ဤအက်ပ်ဗားရှင်းကြောင့် သင့်ကိုယ်ရေးအချက်အလက်များ အန္တရာယ် ရှိနိုင်ပါသည်။ ယခုပင် အပ်ဒိတ်လုပ်ပေးပါ။</string>
     <string name="unsupported_version_without_upgrade">တွဲဖက်မလုပ်ဆောင်နိုင်သည့် အက်ပ်ဗားရှင်းဖြင့် လုပ်ဆောင်နေပါသည်။</string>
     <string name="update_available">အပ်ဒိတ် ရရှိနိုင်ပါပြီ</string>
-    <string name="update_available_description">အပ်ဒိတ် ဖြစ်နေစေရန် Mullvad VPN (%1$s) ကို ထည့်သွင်းပါ</string>
+    <string name="update_available_description">အပ်ဒိတ် ဖြစ်နေစေရန် Rostam VPN (%1$s) ကို ထည့်သွင်းပါ</string>
     <string name="update_available_footer">အပ်ဒိတ် ရရှိနိုင်ပါပြီ၊ ဆက်လက် လုံခြုံစေရန် ဒေါင်းလုဒ်လုပ်ပါ။</string>
     <string name="update_dns_server_dialog_title">DNS ဆာဗာကို အပ်ဒိတ်လုပ်ရန်</string>
     <string name="user_email_hint">သင့်အီးမေးလ် (မဖြည့်လည်း ရပါသည်)</string>

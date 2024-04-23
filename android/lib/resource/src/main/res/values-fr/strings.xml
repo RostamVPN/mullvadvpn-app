@@ -18,7 +18,7 @@
     <string name="all_locations">Toutes les localisations</string>
     <string name="all_providers">Tous les fournisseurs</string>
     <string name="allow_lan_footer">Autorise l\'accès aux autres appareils sur le même réseau pour partager, imprimer, etc.</string>
-    <string name="always_on_vpn_error_notification_content">Impossible de démarrer la connexion au tunnel. Veuillez désactiver « Toujours exiger un VPN « pour &lt;b&gt;%1$s&lt;/b&gt; avant d\'utiliser Mullvad VPN.</string>
+    <string name="always_on_vpn_error_notification_content">Impossible de démarrer la connexion au tunnel. Veuillez désactiver « Toujours exiger un VPN « pour &lt;b&gt;%1$s&lt;/b&gt; avant d\'utiliser Rostam VPN.</string>
     <string name="always_on_vpn_error_notification_title">« Toujours exiger un VPN » est assigné à une autre application</string>
     <string name="any">N\'importe lequel</string>
     <string name="app_version">Version de l\'application</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">Connexion automatique</string>
     <string name="auto_connect_and_lockdown_mode">Connexion automatique et mode Verrouillage</string>
     <string name="auto_connect_and_lockdown_mode_footer">Permet de s\'assurer que l\'appareil est toujours sur le tunnel VPN.</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. Après avoir cliqué sur le bouton &lt;b&gt;Aller aux paramètres VPN&lt;/b&gt; ci-dessous, cliquez sur l\'engrenage à côté du nom &lt;b&gt;Mullvad VPN&lt;/b&gt;.</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. Après avoir cliqué sur le bouton &lt;b&gt;Aller aux paramètres VPN&lt;/b&gt; ci-dessous, cliquez sur l\'engrenage à côté du nom &lt;b&gt;Rostam VPN&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_first_slide_top_text">Les paramètres de la connexion automatique et du mode Verrouillage se trouvent dans les paramètres du système Android, suivez ce guide pour activer l\'un, l\'autre ou les deux.</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. Pour activer la connexion automatique, cliquez sur l\'interrupteur situé à côté de &lt;b&gt;VPN toujours actif&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_second_slide_top_text">La connexion automatique est appelée VPN toujours actif dans les paramètres du système Android et elle s\'assure que vous êtes constamment connecté au tunnel VPN et se connecte automatiquement après le redémarrage.</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Votre confidentialité peut être en danger avec cette version non prise en charge de l\'application. Veuillez la mettre à jour maintenant.</string>
     <string name="unsupported_version_without_upgrade">Vous utilisez une version de l\'application non prise en charge.</string>
     <string name="update_available">MISE À JOUR DISPONIBLE</string>
-    <string name="update_available_description">Installez Mullvad VPN (%1$s) pour rester à jour</string>
+    <string name="update_available_description">Installez Rostam VPN (%1$s) pour rester à jour</string>
     <string name="update_available_footer">Mise à jour disponible. Téléchargez-la pour rester en sécurité.</string>
     <string name="update_dns_server_dialog_title">Mettre à jour le serveur DNS</string>
     <string name="user_email_hint">Votre e-mail (facultatif)</string>

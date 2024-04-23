@@ -20,7 +20,7 @@ CARGO_TARGET_DIR=${CARGO_TARGET_DIR:-"target"}
 
 echo "Computing build version..."
 PRODUCT_VERSION=$(cargo run -q --bin mullvad-version)
-log_header "Building Mullvad VPN $PRODUCT_VERSION"
+log_header "Building Rostam VPN $PRODUCT_VERSION"
 
 # If compiler optimization and artifact compression should be turned on or not
 OPTIMIZE="false"
@@ -181,7 +181,7 @@ function sign_win {
             log_info "Signing $binary..."
             if signtool sign \
                 -tr http://timestamp.digicert.com -td sha256 \
-                -fd sha256 -d "Mullvad VPN" \
+                -fd sha256 -d "Rostam VPN" \
                 -du "https://github.com/mullvad/mullvadvpn-app#readme" \
                 -f "$CERT_FILE" \
                 -p "$CERT_PASSPHRASE" "$binary"
@@ -315,7 +315,7 @@ done
 # Package app.
 ################################################################################
 
-log_header "Preparing for packaging Mullvad VPN $PRODUCT_VERSION"
+log_header "Preparing for packaging Rostam VPN $PRODUCT_VERSION"
 
 if [[ "$(uname -s)" == "Darwin" || "$(uname -s)" == "Linux" ]]; then
     mkdir -p "build/shell-completions"
@@ -337,7 +337,7 @@ log_header "Installing JavaScript dependencies"
 pushd gui
 npm ci
 
-log_header "Packing Mullvad VPN $PRODUCT_VERSION artifact(s)"
+log_header "Packing Rostam VPN $PRODUCT_VERSION artifact(s)"
 
 case "$(uname -s)" in
     Linux*)     npm run pack:linux -- "${NPM_PACK_ARGS[@]}";;

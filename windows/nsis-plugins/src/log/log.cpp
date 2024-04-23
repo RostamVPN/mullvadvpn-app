@@ -170,7 +170,7 @@ void __declspec(dllexport) NSISCALL SetLogTarget
 
 		auto logpath = std::filesystem::path(common::fs::GetKnownFolderPath(
 			FOLDERID_ProgramData));
-		logpath.append(L"Mullvad VPN");
+		logpath.append(L"Rostam VPN");
 
 		auto logpath_wstring = logpath.wstring();
 		const wchar_t* w_path = logpath_wstring.c_str();

@@ -1,31 +1,31 @@
-# Mullvad VPN desktop and mobile app
+# Rostam VPN desktop and mobile app
 
-Welcome to the Mullvad VPN client app source code repository.
-This is the VPN client software for the Mullvad VPN service.
+Welcome to the Rostam VPN client app source code repository.
+This is the VPN client software for the Rostam VPN service.
 For more information about the service, please visit our website,
-[mullvad.net](https://mullvad.net) (Also accessible via Tor on our
+[rostam.net](https://rostam.net) (Also accessible via Tor on our
 [onion service](http://o54hon2e2vj6c7m3aqqu6uyece65by3vgoxxhlqlsvkmacw6a7m7kiad.onion/)).
 
 This repository contains all the source code for the
 desktop and mobile versions of the app. For desktop this includes the system service/daemon
-([`mullvad-daemon`](mullvad-daemon/)), a graphical user interface ([GUI](gui/)) and a
-command line interface ([CLI](mullvad-cli/)). The Android app uses the same backing
+([`rostam-daemon`](rostam-daemon/)), a graphical user interface ([GUI](gui/)) and a
+command line interface ([CLI](rostam-cli/)). The Android app uses the same backing
 system service for the tunnel and security but has a dedicated frontend in [android/](android/).
 iOS consists of a completely standalone implementation that resides in [ios/](ios/).
 
 ## Releases
 
 There are built and signed releases for macOS, Windows, Linux and Android available on
-[our website](https://mullvad.net/download/) and on
-[Github](https://github.com/mullvad/mullvadvpn-app/releases/). The Android app is also available
+[our website](https://rostam.net/download/) and on
+[Github](https://github.com/rostam/rostamvpn-app/releases/). The Android app is also available
 on [Google Play] and [F-Droid] and the iOS version on [App Store].
 
-[Google Play]: https://play.google.com/store/apps/details?id=net.mullvad.mullvadvpn
-[F-Droid]: https://f-droid.org/packages/net.mullvad.mullvadvpn/
-[App Store]: https://apps.apple.com/us/app/mullvad-vpn/id1488466513
+[Google Play]: https://play.google.com/store/apps/details?id=net.rostam.rostamvpn
+[F-Droid]: https://f-droid.org/packages/net.rostam.rostamvpn/
+[App Store]: https://apps.apple.com/us/app/rostam-vpn/id1488466513
 
 You can find our code signing keys as well as instructions for how to cryptographically verify
-your download on [Mullvad's Open Source page].
+your download on [Rostam's Open Source page].
 
 ### Platform/OS support
 
@@ -83,13 +83,13 @@ also have further submodules that are quite large and not needed to build the ap
 you want the source code for OpenSSL, OpenVPN and a few other projects you should avoid a recursive
 clone of the repository. Instead clone the repository normally and then get one level of submodules:
 ```bash
-git clone https://github.com/mullvad/mullvadvpn-app.git
-cd mullvadvpn-app
+git clone https://github.com/rostam/rostamvpn-app.git
+cd rostamvpn-app
 git submodule update --init
 ```
 
 We sign every commit on the `main` branch as well as our release tags. If you would like to verify
-your checkout, you can find our developer keys on [Mullvad's Open Source page].
+your checkout, you can find our developer keys on [Rostam's Open Source page].
 
 ### Binaries submodule
 
@@ -101,7 +101,7 @@ This submodule conforms to the same integrity/security standards as this reposit
 commit should be signed. And this main repository should only ever point to a signed merge commit
 of the binaries submodule.
 
-See the [binaries submodule's](https://github.com/mullvad/mullvadvpn-app-binaries) README for more
+See the [binaries submodule's](https://github.com/rostam/rostamvpn-app-binaries) README for more
 details about that repository.
 
 ## Building the app
@@ -155,19 +155,19 @@ See [this](Release.md) for instructions on how to make a new release.
 * `TALPID_NET_CLS_MOUNT_DIR` - On Linux, forces the daemon to mount the `net_cls` controller in the
   specified directory if it isn't mounted already.
 
-* `MULLVAD_MANAGEMENT_SOCKET_GROUP` - On Linux and macOS, this restricts access to the management
+* `ROSTAM_MANAGEMENT_SOCKET_GROUP` - On Linux and macOS, this restricts access to the management
   interface UDS socket to users in the specified group. This means that only users in that group can
   use the CLI and GUI. By default, everyone has access to the socket.
 
 ### Development builds only
 
-* `MULLVAD_API_HOST` - Set the hostname to use in API requests. E.g. `api.mullvad.net`.
+* `ROSTAM_API_HOST` - Set the hostname to use in API requests. E.g. `api.rostam.net`.
 
-* `MULLVAD_API_ADDR` - Set the IP address and port to use in API requests. E.g. `10.10.1.2:443`.
+* `ROSTAM_API_ADDR` - Set the IP address and port to use in API requests. E.g. `10.10.1.2:443`.
 
-* `MULLVAD_API_DISABLE_TLS` - Use plain HTTP for API requests.
+* `ROSTAM_API_DISABLE_TLS` - Use plain HTTP for API requests.
 
-* `MULLVAD_CONNCHECK_HOST` - Set the hostname to use in connection check requests. E.g. `am.i.mullvad.net`.
+* `ROSTAM_CONNCHECK_HOST` - Set the hostname to use in connection check requests. E.g. `am.i.rostam.net`.
 
 ### Setting environment variables
 
@@ -182,13 +182,13 @@ setx TALPID_DISABLE_OFFLINE 1 /m
 For the change to take effect, restart the daemon:
 
 ```bat
-sc.exe stop mullvadvpn
-sc.exe start mullvadvpn
+sc.exe stop rostamvpn
+sc.exe start rostamvpn
 ```
 
 #### Linux
 
-Edit the systemd unit file via `systemctl edit mullvad-daemon.service`:
+Edit the systemd unit file via `systemctl edit rostam-daemon.service`:
 
 ```ini
 [Service]
@@ -198,7 +198,7 @@ Environment="TALPID_DISABLE_OFFLINE_MONITOR=1"
 For the change to take effect, restart the daemon:
 
 ```bash
-sudo systemctl restart mullvad-daemon
+sudo systemctl restart rostam-daemon
 ```
 
 #### macOS
@@ -212,15 +212,15 @@ sudo launchctl setenv TALPID_DISABLE_OFFLINE_MONITOR 1
 For the change to take effect, restart the daemon:
 
 ```bash
-launchctl unload -w /Library/LaunchDaemons/net.mullvad.daemon.plist
-launchctl load -w /Library/LaunchDaemons/net.mullvad.daemon.plist
+launchctl unload -w /Library/LaunchDaemons/net.rostam.daemon.plist
+launchctl load -w /Library/LaunchDaemons/net.rostam.daemon.plist
 ```
 
 ## Environment variables used by the GUI frontend
 
-* `MULLVAD_PATH` - Allows changing the path to the folder with the `mullvad-problem-report` tool
+* `ROSTAM_PATH` - Allows changing the path to the folder with the `rostam-problem-report` tool
    when running in development mode. Defaults to: `<repo>/target/debug/`.
-* `MULLVAD_DISABLE_UPDATE_NOTIFICATION` - If set to `1`, GUI notification will be disabled when
+* `ROSTAM_DISABLE_UPDATE_NOTIFICATION` - If set to `1`, GUI notification will be disabled when
    an update is available.
 
 
@@ -268,7 +268,7 @@ If you're using GNOME, try installing one of these GNOME Shell extensions:
   - **linux/** - Scripts and configuration files for the deb and rpm artifacts
   - **pkg-scripts/** - Scripts bundled with and executed by the macOS pkg installer
   - **windows/** - Windows NSIS installer configuration and assets
-  - **ca.crt** - The Mullvad relay server root CA. Bundled with the app and only OpenVPN relays
+  - **ca.crt** - The Rostam relay server root CA. Bundled with the app and only OpenVPN relays
     signed by this CA are trusted
 
 
@@ -276,24 +276,24 @@ If you're using GNOME, try installing one of these GNOME Shell extensions:
 - **build-windows-modules.sh** - Compiles the C++ libraries needed on Windows
 - **build.sh** - Sanity checks the working directory state and then builds installers for the app
 
-### Mullvad Daemon
+### Rostam Daemon
 
 The daemon is implemented in Rust and is implemented in several crates. The main, or top level,
-crate that builds the final daemon binary is `mullvad-daemon` which then depend on the others.
+crate that builds the final daemon binary is `rostam-daemon` which then depend on the others.
 
 In general one can look at the daemon as split into two parts, the crates starting with `talpid`
-and the crates starting with `mullvad`. The `talpid` crates are supposed to be completely unrelated
-to Mullvad specific things. A `talpid` crate is not allowed to know anything about the API through
-which the daemon fetch Mullvad account details or download VPN server lists for example. The
+and the crates starting with `rostam`. The `talpid` crates are supposed to be completely unrelated
+to Rostam specific things. A `talpid` crate is not allowed to know anything about the API through
+which the daemon fetch Rostam account details or download VPN server lists for example. The
 `talpid` components should be viewed as a generic VPN client with extra privacy and anonymity
-preserving features. The crates having `mullvad` in their name on the other hand make use of the
-`talpid` components to build a secure and Mullvad specific VPN client.
+preserving features. The crates having `rostam` in their name on the other hand make use of the
+`talpid` components to build a secure and Rostam specific VPN client.
 
 
 - **Cargo.toml** - Main Rust workspace definition. See this file for which folders here are daemon
   Rust crates.
-- **mullvad-daemon/** - Main Rust crate building the daemon binary.
-- **talpid-core/** - Main crate of the VPN client implementation itself. Completely Mullvad agnostic
+- **rostam-daemon/** - Main Rust crate building the daemon binary.
+- **talpid-core/** - Main crate of the VPN client implementation itself. Completely Rostam agnostic
   privacy preserving VPN client library.
 
 
@@ -301,72 +301,72 @@ preserving features. The crates having `mullvad` in their name on the other hand
 
 Explanations for some common words used in the documentation and code in this repository.
 
-- **App** - This entire product (everything in this repository) is the "Mullvad VPN App", or App for
+- **App** - This entire product (everything in this repository) is the "Rostam VPN App", or App for
   short.
-  - **Daemon** - Refers to the `mullvad-daemon` Rust program. This headless program exposes a
+  - **Daemon** - Refers to the `rostam-daemon` Rust program. This headless program exposes a
     management interface that can be used to control the daemon
   - **Frontend** - Term used for any program or component that connects to the daemon management
     interface and allows a user to control the daemon.
-    - **GUI** - The Electron + React program that is a graphical frontend for the Mullvad VPN App.
-    - **CLI** - The Rust program named `mullvad` that is a terminal based frontend for the Mullvad
+    - **GUI** - The Electron + React program that is a graphical frontend for the Rostam VPN App.
+    - **CLI** - The Rust program named `rostam` that is a terminal based frontend for the Rostam
       VPN app.
 
 
-## File paths used by Mullvad VPN app
+## File paths used by Rostam VPN app
 
-A list of file paths written to and read from by the various components of the Mullvad VPN app
+A list of file paths written to and read from by the various components of the Rostam VPN app
 
 ### Daemon
 
 On Windows, when a process runs as a system service the variable `%LOCALAPPDATA%` expands to
 `C:\Windows\system32\config\systemprofile\AppData\Local`.
 
-All directory paths are defined in, and fetched from, the `mullvad-paths` crate.
+All directory paths are defined in, and fetched from, the `rostam-paths` crate.
 
 #### Settings
 
-The settings directory can be changed by setting the `MULLVAD_SETTINGS_DIR` environment variable.
+The settings directory can be changed by setting the `ROSTAM_SETTINGS_DIR` environment variable.
 
 | Platform | Path |
 |----------|------|
-| Linux | `/etc/mullvad-vpn/` |
-| macOS | `/etc/mullvad-vpn/` |
-| Windows | `%LOCALAPPDATA%\Mullvad VPN\` |
-| Android | `/data/data/net.mullvad.mullvadvpn/` |
+| Linux | `/etc/rostam-vpn/` |
+| macOS | `/etc/rostam-vpn/` |
+| Windows | `%LOCALAPPDATA%\Rostam VPN\` |
+| Android | `/data/data/net.rostam.rostamvpn/` |
 
 #### Logs
 
-The log directory can be changed by setting the `MULLVAD_LOG_DIR` environment variable.
+The log directory can be changed by setting the `ROSTAM_LOG_DIR` environment variable.
 
 | Platform | Path |
 |----------|------|
-| Linux | `/var/log/mullvad-vpn/` + systemd |
-| macOS | `/var/log/mullvad-vpn/` |
-| Windows | `C:\ProgramData\Mullvad VPN\` |
-| Android | `/data/data/net.mullvad.mullvadvpn/` |
+| Linux | `/var/log/rostam-vpn/` + systemd |
+| macOS | `/var/log/rostam-vpn/` |
+| Windows | `C:\ProgramData\Rostam VPN\` |
+| Android | `/data/data/net.rostam.rostamvpn/` |
 
 #### Cache
 
-The cache directory can be changed by setting the `MULLVAD_CACHE_DIR` environment variable.
+The cache directory can be changed by setting the `ROSTAM_CACHE_DIR` environment variable.
 
 | Platform | Path |
 |----------|------|
-| Linux | `/var/cache/mullvad-vpn/` |
-| macOS | `/Library/Caches/mullvad-vpn/` |
-| Windows | `C:\ProgramData\Mullvad VPN\cache` |
-| Android | `/data/data/net.mullvad.mullvadvpn/cache` |
+| Linux | `/var/cache/rostam-vpn/` |
+| macOS | `/Library/Caches/rostam-vpn/` |
+| Windows | `C:\ProgramData\Rostam VPN\cache` |
+| Android | `/data/data/net.rostam.rostamvpn/cache` |
 
 #### RPC address file
 
-The full path to the RPC address file can be changed by setting the `MULLVAD_RPC_SOCKET_PATH`
+The full path to the RPC address file can be changed by setting the `ROSTAM_RPC_SOCKET_PATH`
 environment variable.
 
 | Platform | Path |
 |----------|------|
-| Linux | `/var/run/mullvad-vpn` |
-| macOS | `/var/run/mullvad-vpn` |
-| Windows | `//./pipe/Mullvad VPN` |
-| Android | `/data/data/net.mullvad.mullvadvpn/rpc-socket` |
+| Linux | `/var/run/rostam-vpn` |
+| macOS | `/var/run/rostam-vpn` |
+| Windows | `//./pipe/Rostam VPN` |
+| Android | `/data/data/net.rostam.rostamvpn/rpc-socket` |
 
 ### GUI
 
@@ -375,9 +375,9 @@ The GUI has a specific settings file that is configured for each user. The path 
 
 | Platform | Path |
 |----------|------|
-| Linux | `$XDG_CONFIG_HOME/Mullvad VPN/gui_settings.json` |
-| macOS | `~/Library/Application Support/Mullvad VPN/gui_settings.json` |
-| Windows | `%LOCALAPPDATA%\Mullvad VPN\gui_settings.json` |
+| Linux | `$XDG_CONFIG_HOME/Rostam VPN/gui_settings.json` |
+| macOS | `~/Library/Application Support/Rostam VPN/gui_settings.json` |
+| Windows | `%LOCALAPPDATA%\Rostam VPN\gui_settings.json` |
 | Android | Present in Android's `logcat` |
 
 ## Icons
@@ -393,12 +393,12 @@ For instructions specific to the Android app, see [here](./android/README.md).
 
 ## Audits, pentests and external security reviews
 
-Mullvad has used external pentesting companies to carry out security audits of this VPN app. Read
+Rostam has used external pentesting companies to carry out security audits of this VPN app. Read
 more about them in the [audits readme](./audits/README.md).
 
 # License
 
-Copyright (C) 2024  Mullvad VPN AB
+Copyright (C) 2024  Rostam VPN AB
 
 This program is free software: you can redistribute it and/or modify it under the terms of the
 GNU General Public License as published by the Free Software Foundation, either version 3 of
@@ -411,4 +411,4 @@ But the distributed app on the Apple App Store is not GPL licensed,
 it falls under the [Apple App Store EULA].
 
 [Apple App Store EULA]: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-[Mullvad's Open Source page]: https://mullvad.net/en/guides/open-source/
+[Rostam's Open Source page]: https://rostam.net/en/guides/open-source/

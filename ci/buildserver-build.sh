@@ -70,7 +70,7 @@ function publish_linux_repositories {
 
 # Uploads whatever matches the first argument to the Linux build server
 function upload_sftp {
-    echo "Uploading Mullvad VPN installers to app-build-linux:upload/"
+    echo "Uploading Rostam VPN installers to app-build-linux:upload/"
     sftp app-build-linux <<EOF
 cd upload
 put $1

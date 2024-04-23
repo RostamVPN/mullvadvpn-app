@@ -18,7 +18,7 @@
     <string name="all_locations">Все местоположения</string>
     <string name="all_providers">Все провайдеры</string>
     <string name="allow_lan_footer">Разрешить доступ к другим устройствам в той же сети для организации общего доступа, печати и т. д.</string>
-    <string name="always_on_vpn_error_notification_content">Не удалось запустить туннельное подключение. Перед использованием Mullvad VPN отключите опцию «Постоянная VPN» для приложения &lt;b&gt;%1$s&lt;/b&gt;.</string>
+    <string name="always_on_vpn_error_notification_content">Не удалось запустить туннельное подключение. Перед использованием Rostam VPN отключите опцию «Постоянная VPN» для приложения &lt;b&gt;%1$s&lt;/b&gt;.</string>
     <string name="always_on_vpn_error_notification_title">Опция «Постоянная VPN» назначена другому приложению</string>
     <string name="any">Все</string>
     <string name="app_version">Версия приложения</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">Автоподключение</string>
     <string name="auto_connect_and_lockdown_mode">Автоподключение и режим блокировки</string>
     <string name="auto_connect_and_lockdown_mode_footer">Обеспечивает постоянное подключение устройства к туннелю VPN.</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. После нажатия кнопки &lt;b&gt;Перейти к настройкам VPN&lt;/b&gt; ниже нажмите на шестеренку рядом с &lt;b&gt;Mullvad VPN&lt;/b&gt;.</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. После нажатия кнопки &lt;b&gt;Перейти к настройкам VPN&lt;/b&gt; ниже нажмите на шестеренку рядом с &lt;b&gt;Rostam VPN&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_first_slide_top_text">Настройки автоподключения и режима блокировки можно найти в системных настройках Android. Чтобы включить их, следуйте этой инструкции.</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. Чтобы включить автоподключение, нажмите на переключатель возле опции &lt;b&gt;Постоянная VPN&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_second_slide_top_text">В системных настройках Android автоподключение называется «Постоянная VPN». Эта опция обеспечивает постоянное подключение к туннелю VPN и автоподключение после перезапуска.</string>
@@ -55,10 +55,10 @@
     <string name="congrats">Поздравляем!</string>
     <string name="connect">Защитить мое подключение</string>
     <string name="connecting">Идет подключение</string>
-    <string name="connecting_to_daemon">Подключение к системному сервису Mullvad...</string>
+    <string name="connecting_to_daemon">Подключение к системному сервису Rostam...</string>
     <string name="continue_login">Войти</string>
     <string name="copied_logs_to_clipboard">Журналы скопированы в буфер обмена</string>
-    <string name="copied_mullvad_account_number">Номер учетной записи Mullvad скопирован в буфер обмена</string>
+    <string name="copied_rostam_account_number">Номер учетной записи Rostam скопирован в буфер обмена</string>
     <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
     <string name="copy_account_number">Копировать номер учетной записи</string>
     <string name="create_account">Создать учетную запись</string>
@@ -83,8 +83,8 @@
     <string name="device_inactive_title">Устройство неактивно</string>
     <string name="device_inactive_unblock_warning">Вход в профиль разблокирует Интернет на этом устройстве.</string>
     <string name="device_name">Имя устройства</string>
-    <string name="device_name_info_first_paragraph">Это имя, присвоенное устройству. Каждое устройство, подключенное к учетной записи Mullvad, получает уникальное имя, которое помогает вам идентифицировать его при управлении устройствами в приложении или на сайте.</string>
-    <string name="device_name_info_second_paragraph">К одной учетной записи Mullvad можно подключить до 5 устройств.</string>
+    <string name="device_name_info_first_paragraph">Это имя, присвоенное устройству. Каждое устройство, подключенное к учетной записи Rostam, получает уникальное имя, которое помогает вам идентифицировать его при управлении устройствами в приложении или на сайте.</string>
+    <string name="device_name_info_second_paragraph">К одной учетной записи Rostam можно подключить до 5 устройств.</string>
     <string name="device_name_info_third_paragraph">Если вы выйдете, устройство и его имя удалятся. При повторном входе устройство получит новое имя.</string>
     <string name="disconnect">Отключить</string>
     <string name="disconnecting">Отключение</string>
@@ -152,8 +152,8 @@
     <string name="max_devices_resolved_title">Отлично!</string>
     <string name="max_devices_warning_description">Выйдите из учетной записи хотя бы на одном из устройств, удалив его из списка ниже. Имя устройства указано в настройках учетной записи.</string>
     <string name="max_devices_warning_title">Слишком много устройств</string>
-    <string name="mullvad_account_number">Номер учетной записи Mullvad</string>
-    <string name="mullvad_owned_only">Только принадлежащие Mullvad</string>
+    <string name="rostam_account_number">Номер учетной записи Rostam</string>
+    <string name="rostam_owned_only">Только принадлежащие Rostam</string>
     <string name="new_device_notification_message">Добро пожаловать, теперь это устройство называется &lt;b&gt;%1$s&lt;/b&gt;. Для получения более подробной нажмите на кнопку «Информация» в учетной записи.</string>
     <string name="new_device_notification_title">СОЗДАНО НОВОЕ УСТРОЙСТВО</string>
     <string name="no_internet_connection">Нет подключения к Интернету</string>
@@ -177,12 +177,12 @@
     <string name="payment_completed_dialog_message">На учетную запись добавлено 30 дней.</string>
     <string name="payment_completed_dialog_title">Время добавлено</string>
     <string name="payment_obfuscation_id_error_dialog_message">Не удалось начать процесс оплаты. Повторите попытку позже.</string>
-    <string name="payment_obfuscation_id_error_dialog_title">Службы Mullvad недоступны</string>
+    <string name="payment_obfuscation_id_error_dialog_title">Службы Rostam недоступны</string>
     <string name="payment_pending_dialog_message">Сейчас мы проверяем, прошла ли оплата; нужно немного подождать. Если проверка завершится успешно, мы добавим оплаченное время.</string>
     <string name="payment_pending_dialog_title">Идет проверка оплаты</string>
     <string name="payment_status_pending">Ожидается оплата в Google Play</string>
     <string name="port">Порт</string>
-    <string name="privacy_disclaimer_body_first_paragraph">Чтобы удостовериться, что вы используете наиболее безопасную версию приложения, и сообщить вам о возможных проблемах в ней, приложение автоматически проверяет свою версию. При этом на серверы Mullvad передаются данные о версии приложения и системы Android. Mullvad ведет учет количества пользователей с определенными версиями приложения и ОС Android. Эти данные не хранятся и не используются каким бы то ни было образом, позволяющим вас идентифицировать.</string>
+    <string name="privacy_disclaimer_body_first_paragraph">Чтобы удостовериться, что вы используете наиболее безопасную версию приложения, и сообщить вам о возможных проблемах в ней, приложение автоматически проверяет свою версию. При этом на серверы Rostam передаются данные о версии приложения и системы Android. Rostam ведет учет количества пользователей с определенными версиями приложения и ОС Android. Эти данные не хранятся и не используются каким бы то ни было образом, позволяющим вас идентифицировать.</string>
     <string name="privacy_disclaimer_body_second_paragraph">Если используется функция раздельного туннелирования, то приложение запрашивает в системе список всех установленных приложений. Этот список запрашивается только на  экране настройки раздельного туннелирования. Список установленных приложений никогда не передается за пределы устройства.</string>
     <string name="privacy_disclaimer_title">Конфиденциальность</string>
     <string name="privacy_policy_label">Политика конфиденциальности</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Эта версия приложения не поддерживается, что может угрожать неприкосновенности ваших данных. Обновите приложение.</string>
     <string name="unsupported_version_without_upgrade">Версия приложения, с которой вы работаете, не поддерживается.</string>
     <string name="update_available">ЕСТЬ ОБНОВЛЕНИЕ</string>
-    <string name="update_available_description">Пользуйтесь актуальной версией — установите Mullvad VPN (%1$s)</string>
+    <string name="update_available_description">Пользуйтесь актуальной версией — установите Rostam VPN (%1$s)</string>
     <string name="update_available_footer">Вышло обновление. Установите его, чтобы защитить подключения.</string>
     <string name="update_dns_server_dialog_title">Обновить DNS-сервер</string>
     <string name="user_email_hint">Ваша электронная почта (необязательно)</string>

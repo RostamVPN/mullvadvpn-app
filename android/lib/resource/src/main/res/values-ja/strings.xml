@@ -18,7 +18,7 @@
     <string name="all_locations">すべての場所</string>
     <string name="all_providers">すべてのプロバイダ</string>
     <string name="allow_lan_footer">共有や印刷などのため、同一ネットワーク上の他のデバイスへのアクセスを許可します。</string>
-    <string name="always_on_vpn_error_notification_content">トンネル接続を開始できません。Mullvad VPNを使用する前に&lt;b&gt;%1$s&lt;/b&gt;のAlways-on VPNを無効にしてください。</string>
+    <string name="always_on_vpn_error_notification_content">トンネル接続を開始できません。Rostam VPNを使用する前に&lt;b&gt;%1$s&lt;/b&gt;のAlways-on VPNを無効にしてください。</string>
     <string name="always_on_vpn_error_notification_title">Always-on VPNは他のアプリに割り当てられています</string>
     <string name="any">すべて</string>
     <string name="app_version">アプリのバージョン</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">自動接続</string>
     <string name="auto_connect_and_lockdown_mode">自動接続とロックダウンモード</string>
     <string name="auto_connect_and_lockdown_mode_footer">デバイスが必ずVPNトンネルを使用するようにします。</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. 下の [&lt;b&gt;VPN設定に移動&lt;/b&gt;] ボタンをクリックし、&lt;b&gt;Mullvad VPN&lt;/b&gt;名の横にある歯車をクリックします。</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. 下の [&lt;b&gt;VPN設定に移動&lt;/b&gt;] ボタンをクリックし、&lt;b&gt;Rostam VPN&lt;/b&gt;名の横にある歯車をクリックします。</string>
     <string name="auto_connect_carousel_first_slide_top_text">自動接続とロックダウンモードの設定はAndroidシステム設定にあります。どちらか、または両方をこのガイドに従って有効にしてください。</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. 自動接続を有効にするには、[&lt;b&gt;Always-on VPN&lt;/b&gt;] の横のトグルボタンをクリックします。</string>
     <string name="auto_connect_carousel_second_slide_top_text">自動接続はAndroidシステム設定で「Always-on VPN」と呼ばれており、確実に一貫してVPNトンネルに接続し、再起動の後に自動接続を行う機能です。</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">このアプリバージョンはサポートされていないため、プライバシーが危険にさらされる可能性があります。今すぐアップデートしてください。</string>
     <string name="unsupported_version_without_upgrade">サポート対象外バージョンのアプリを実行しています。</string>
     <string name="update_available">アップデート可</string>
-    <string name="update_available_description">Mullvad VPN (%1$s) をインストールして常に最新の状態を保ちましょう</string>
+    <string name="update_available_description">Rostam VPN (%1$s) をインストールして常に最新の状態を保ちましょう</string>
     <string name="update_available_footer">アップデートできます。セキュリティを維持するにはダウンロードしてしてください。</string>
     <string name="update_dns_server_dialog_title">DNS サーバーを更新</string>
     <string name="user_email_hint">あなたのメールアドレス (任意)</string>

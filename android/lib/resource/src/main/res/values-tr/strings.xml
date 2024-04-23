@@ -18,7 +18,7 @@
     <string name="all_locations">Tüm konumlar</string>
     <string name="all_providers">Tüm hizmet sağlayıcılar</string>
     <string name="allow_lan_footer">Paylaşım, yazdırma gibi özellikler için aynı ağdaki diğer cihazlara erişim izni verir.</string>
-    <string name="always_on_vpn_error_notification_content">Tünel bağlantısı başlatılamıyor. Mullvad VPN\'i kullanmadan önce lütfen Her zaman açık VPN\'i &lt;b&gt;%1$s&lt;/b&gt; için devre dışı bırakın.</string>
+    <string name="always_on_vpn_error_notification_content">Tünel bağlantısı başlatılamıyor. Rostam VPN\'i kullanmadan önce lütfen Her zaman açık VPN\'i &lt;b&gt;%1$s&lt;/b&gt; için devre dışı bırakın.</string>
     <string name="always_on_vpn_error_notification_title">Her zaman açık VPN başka bir uygulamaya atandı</string>
     <string name="any">Tümü</string>
     <string name="app_version">Uygulama sürümü</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">Otomatik Bağlan</string>
     <string name="auto_connect_and_lockdown_mode">Otomatik bağlantı ve Kilitleme modu</string>
     <string name="auto_connect_and_lockdown_mode_footer">Cihazın her zaman VPN tünelinde olduğundan emin olun.</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. Aşağıdaki &lt;b&gt;VPN ayarlarına git&lt;/b&gt; düğmesine tıkladıktan sonra &lt;b&gt;Mullvad VPN&lt;/b&gt;\'nin yanındaki dişli çarka tıklayın.</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. Aşağıdaki &lt;b&gt;VPN ayarlarına git&lt;/b&gt; düğmesine tıkladıktan sonra &lt;b&gt;Rostam VPN&lt;/b&gt;\'nin yanındaki dişli çarka tıklayın.</string>
     <string name="auto_connect_carousel_first_slide_top_text">Otomatik Bağlantı ve Kilitleme modu ayarları Android sistem ayarlarında yer alır. Bu ayarlardan birini veya her ikisini de etkinleştirmek için bu kılavuza göz atın.</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. Otomatik bağlantıyı etkinleştirmek için &lt;b&gt;VPN her zaman açık&lt;/b&gt; seçeneğinin yanındaki düğmeye tıklayın.</string>
     <string name="auto_connect_carousel_second_slide_top_text">Otomatik bağlantı, Android sistem ayarlarında VPN her zaman açık olarak gösterilir ve VPN tüneline sürekli bağlı olmanızı ve yeniden başlatma sonrası otomatik olarak bağlanmanızı sağlar.</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Bu desteklenmeyen uygulama sürümüyle gizliliğiniz risk altında olabilir. Lütfen hemen güncelleyin.</string>
     <string name="unsupported_version_without_upgrade">Desteklenmeyen bir uygulama sürümünü kullanıyorsunuz.</string>
     <string name="update_available">GÜNCELLEME MEVCUT</string>
-    <string name="update_available_description">Güncel kalmak için Mullvad VPN (%1$s) yükleyin</string>
+    <string name="update_available_description">Güncel kalmak için Rostam VPN (%1$s) yükleyin</string>
     <string name="update_available_footer">Güncelleme mevcut, güvende kalmak için güncellemeyi indirin.</string>
     <string name="update_dns_server_dialog_title">DNS sunucusunu güncelle</string>
     <string name="user_email_hint">E-posta adresiniz (isteğe bağlı)</string>

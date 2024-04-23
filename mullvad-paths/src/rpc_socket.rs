@@ -14,7 +14,7 @@ pub fn get_default_rpc_socket_path() -> PathBuf {
     }
     #[cfg(windows)]
     {
-        PathBuf::from("//./pipe/Mullvad VPN")
+        PathBuf::from("//./pipe/Rostam VPN")
     }
     #[cfg(target_os = "android")]
     {

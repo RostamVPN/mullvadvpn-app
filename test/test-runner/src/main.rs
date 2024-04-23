@@ -283,12 +283,12 @@ impl Service for TestServer {
         sys::restart_app().await
     }
 
-    /// Stop the Mullvad VPN application.
+    /// Stop the Rostam VPN application.
     async fn stop_mullvad_daemon(self, _: context::Context) -> Result<(), test_rpc::Error> {
         sys::stop_app().await
     }
 
-    /// Start the Mullvad VPN application.
+    /// Start the Rostam VPN application.
     async fn start_mullvad_daemon(self, _: context::Context) -> Result<(), test_rpc::Error> {
         sys::start_app().await
     }

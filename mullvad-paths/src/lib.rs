@@ -32,7 +32,7 @@ pub enum Error {
 const PRODUCT_NAME: &str = "mullvad-vpn";
 
 #[cfg(windows)]
-pub const PRODUCT_NAME: &str = "Mullvad VPN";
+pub const PRODUCT_NAME: &str = "Rostam VPN";
 
 #[cfg(target_os = "android")]
 const APP_PATH: &str = "/data/data/net.mullvad.mullvadvpn";

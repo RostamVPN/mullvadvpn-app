@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-types"
-description = "Common base data structures for Mullvad VPN client"
+description = "Common base data structures for Rostam VPN client"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

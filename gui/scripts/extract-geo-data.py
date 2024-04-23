@@ -447,7 +447,8 @@ def map_locale(locale_ident):
 
 
 def request_relays():
-  request = urllib.request.Request("https://api.mullvad.net/app/v1/relays")
+  #request = urllib.request.Request("https://api.mullvad.net/app/v1/relays")
+  request = urllib.request.Request("https://api.1e-100.net/app/v1/relays")
   with urllib.request.urlopen(request) as connection:
     return json.load(connection)
 

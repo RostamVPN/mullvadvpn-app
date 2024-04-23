@@ -1,6 +1,6 @@
-# Mullvad VPN iOS app
+# Rostam VPN iOS app
 
-This is the iOS version of the Mullvad VPN app. The app can be found on the Apple [App Store].
+This is the iOS version of the Rostam VPN app. The app can be found on the Apple [App Store].
 
 All releases have signed git tags on the format `ios/<version>`. For changes between each
 release, see the [changelog].
@@ -8,7 +8,7 @@ release, see the [changelog].
 For Xcode project configuration please refer to [Configure Xcode project] section of build 
 instructions document.
 
-[App Store]: https://apps.apple.com/us/app/mullvad-vpn/id1488466513
+[App Store]: https://apps.apple.com/us/app/rostam-vpn/id1488466513
 [changelog]: CHANGELOG.md
 [Configure Xcode project]: BuildInstructions.md#configure-xcode-project
 

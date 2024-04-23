@@ -850,8 +850,8 @@ msgid "If these steps do not work please send a problem report."
 msgstr "如果这些步骤不起作用，请发送问题报告。"
 
 msgctxt "launch-view"
-msgid "Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting."
-msgstr "Mullvad VPN 服务的权限已被撤销。请前往“系统设置”，并在“允许在后台”设置下允许 Mullvad VPN。"
+msgid "Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting."
+msgstr "Rostam VPN 服务的权限已被撤销。请前往“系统设置”，并在“允许在后台”设置下允许 Rostam VPN。"
 
 msgctxt "launch-view"
 msgid "Reinstalling the app."
@@ -1753,8 +1753,8 @@ msgid "Adult content"
 msgstr "成人内容"
 
 msgctxt "vpn-settings-view"
-msgid "Attention: enabling this will always require a Mullvad VPN connection in order to reach the internet."
-msgstr "注意：启用此选项后，将始终需要 Mullvad VPN 才能连接到网络。"
+msgid "Attention: enabling this will always require a Rostam VPN connection in order to reach the internet."
+msgstr "注意：启用此选项后，将始终需要 Rostam VPN 才能连接到网络。"
 
 msgctxt "vpn-settings-view"
 msgid "Attention: this setting cannot be used in combination with <b>%(customDnsFeatureName)s</b>"
@@ -1864,8 +1864,8 @@ msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill
 msgstr "安全开关与锁定模式之间的区别在于，安全开关将防止在自动隧道重新连接、软件崩溃和类似事故期间发生任何泄漏。"
 
 msgctxt "vpn-settings-view"
-msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "安全开关与锁定模式之间的区别在于，安全开关将防止在自动隧道重新连接、软件崩溃和类似事故期间发生任何泄漏。启用锁定模式后，您必须连接到 Mullvad VPN 服务器才能访问网络。手动断开或退出应用程序将阻止您的连接。"
+msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "安全开关与锁定模式之间的区别在于，安全开关将防止在自动隧道重新连接、软件崩溃和类似事故期间发生任何泄漏。启用锁定模式后，您必须连接到 Rostam VPN 服务器才能访问网络。手动断开或退出应用程序将阻止您的连接。"
 
 msgctxt "vpn-settings-view"
 msgid "The DNS server you want to add is a private IP. You must ensure that your network interfaces are configured to use it."
@@ -1921,8 +1921,8 @@ msgid "When this feature is enabled, IPv6 can be used alongside IPv4 in the VPN 
 msgstr "启用此功能后，IPv6 可以在 VPN 隧道中与 IPv4 一起使用来通过互联网服务通信。"
 
 msgctxt "vpn-settings-view"
-msgid "With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
-msgstr "启用锁定模式后，您必须连接到 Mullvad VPN 服务器才能访问网络。手动断开或退出应用将阻止您的连接。"
+msgid "With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgstr "启用锁定模式后，您必须连接到 Rostam VPN 服务器才能访问网络。手动断开或退出应用将阻止您的连接。"
 
 #. Title label in navigation bar
 #. Available placeholders:
@@ -2012,8 +2012,8 @@ msgctxt "Message to indicate how much time was added to an account as part of an
 msgid "%s was added to your account."
 msgstr "%s已添加到您的帐户中。"
 
-msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Mullvad VPN</b> name."
-msgstr "1. 点击下方的<b>前往 VPN 设置</b>按钮后，点击 <b>Mullvad VPN</b> 名称旁边的齿轮。"
+msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Rostam VPN</b> name."
+msgstr "1. 点击下方的<b>前往 VPN 设置</b>按钮后，点击 <b>Rostam VPN</b> 名称旁边的齿轮。"
 
 msgid "2. To enable Auto-connect, click on the toggle next to <b>Always-on VPN</b>."
 msgstr "2. 要启用自动连接，请点击<b>始终开启的 VPN</b> 旁边的开关。"
@@ -2123,8 +2123,8 @@ msgstr "Google Play 不可用"
 msgid "If the split tunneling feature is used, then the app queries your system for a list of all installed applications. This list is only retrieved in the split tunneling view. The list of installed applications is never sent from the device."
 msgstr "如果使用拆分隧道功能，应用会向您的系统查询所有已安装应用程序的列表。此列表仅在拆分隧道视图中检索。有关已安装应用程序的信息永远不会离开设备。"
 
-msgid "Install Mullvad VPN (%s) to stay up to date"
-msgstr "安装 Mullvad VPN (%s) 以保持最新状态"
+msgid "Install Rostam VPN (%s) to stay up to date"
+msgstr "安装 Rostam VPN (%s) 以保持最新状态"
 
 msgid "Makes sure the device is always on the VPN tunnel."
 msgstr "确保设备始终位于 VPN 隧道上。"
@@ -2207,8 +2207,8 @@ msgstr "切换 VPN"
 msgid "Unable to apply firewall rules. Please troubleshoot or send a problem report."
 msgstr "无法应用防火墙规则。请排查问题或发送问题报告。"
 
-msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Mullvad VPN."
-msgstr "无法启动隧道连接。在使用 Mullvad VPN 之前，请为 <b>%s</b> 禁用“始终开启的 VPN”。"
+msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Rostam VPN."
+msgstr "无法启动隧道连接。在使用 Rostam VPN 之前，请为 <b>%s</b> 禁用“始终开启的 VPN”。"
 
 msgid "Unsecured"
 msgstr "未受保护"

@@ -1,6 +1,6 @@
 @startuml overview
 
-title Mullvad VPN Android app overview
+title Rostam VPN Android app overview
 skinparam SequenceMessageAlign center
 skinparam componentStyle rectangle
 skinparam linetype polyline

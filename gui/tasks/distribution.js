@@ -23,8 +23,8 @@ function getOptionValue(option) {
 
 const config = {
   appId: 'net.mullvad.vpn',
-  copyright: 'Mullvad VPN AB',
-  productName: 'Mullvad VPN',
+  copyright: 'Rostam VPN AB',
+  productName: 'Rostam VPN',
   asar: true,
   compression: noCompression ? 'store' : 'normal',
   extraResources: [
@@ -133,7 +133,7 @@ const config = {
       },
     ],
     artifactName: 'MullvadVPN-${version}.${ext}',
-    publisherName: 'Mullvad VPN AB',
+    publisherName: 'Rostam VPN AB',
     signingHashAlgorithms: ['sha256'],
     signDlls: true,
     extraResources: [
@@ -212,7 +212,7 @@ const config = {
       // same across all electron-builder applications, which causes package
       // conflicts
       '--rpm-rpmbuild-define=_build_id_links none',
-      '--directories=/opt/Mullvad VPN/',
+      '--directories=/opt/Rostam VPN/',
       '--before-install',
       distAssets('linux/before-install.sh'),
       '--before-remove',

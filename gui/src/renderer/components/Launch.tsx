@@ -21,7 +21,7 @@ export default function Launch() {
 
   return (
     <ErrorView footer={footer}>
-      {messages.pgettext('launch-view', 'Connecting to Mullvad system service...')}
+      {messages.pgettext('launch-view', 'Connecting to Rostam system service...')}
     </ErrorView>
   );
 }
@@ -60,7 +60,7 @@ function MacOsPermissionFooter() {
         <StyledFooterMessage>
           {messages.pgettext(
             'launch-view',
-            'Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting.',
+            'Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting.',
           )}
         </StyledFooterMessage>
         <AppButton.BlueButton onClick={openSettings}>
@@ -87,7 +87,7 @@ function DefaultFooter() {
           <StyledFooterMessage>
             {messages.pgettext(
               'launch-view',
-              'Unable to contact the Mullvad system service, your connection might be unsecure. Please troubleshoot or send a problem report by clicking the Learn more button.',
+              'Unable to contact the Rostam system service, your connection might be unsecure. Please troubleshoot or send a problem report by clicking the Learn more button.',
             )}
           </StyledFooterMessage>
           <AppButton.BlueButton onClick={showDialog}>

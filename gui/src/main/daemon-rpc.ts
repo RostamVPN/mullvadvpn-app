@@ -79,7 +79,7 @@ import { ManagementServiceClient } from './management_interface/management_inter
 import * as grpcTypes from './management_interface/management_interface_pb';
 
 const DAEMON_RPC_PATH =
-  process.platform === 'win32' ? 'unix:////./pipe/Mullvad VPN' : 'unix:///var/run/mullvad-vpn';
+  process.platform === 'win32' ? 'unix:////./pipe/Rostam VPN' : 'unix:///var/run/rostam-vpn';
 
 const NETWORK_CALL_TIMEOUT = 10000;
 const CHANNEL_STATE_TIMEOUT = 1000 * 60 * 60;
@@ -1457,8 +1457,8 @@ function convertFromOwnership(ownership: grpcTypes.Ownership): Ownership {
   switch (ownership) {
     case grpcTypes.Ownership.ANY:
       return Ownership.any;
-    case grpcTypes.Ownership.MULLVAD_OWNED:
-      return Ownership.mullvadOwned;
+    case grpcTypes.Ownership.ROSTAM_OWNED:
+      return Ownership.rostamOwned;
     case grpcTypes.Ownership.RENTED:
       return Ownership.rented;
   }
@@ -1468,8 +1468,8 @@ function convertToOwnership(ownership: Ownership): grpcTypes.Ownership {
   switch (ownership) {
     case Ownership.any:
       return grpcTypes.Ownership.ANY;
-    case Ownership.mullvadOwned:
-      return grpcTypes.Ownership.MULLVAD_OWNED;
+    case Ownership.rostamOwned:
+      return grpcTypes.Ownership.ROSTAM_OWNED;
     case Ownership.rented:
       return grpcTypes.Ownership.RENTED;
   }
@@ -1866,7 +1866,7 @@ function convertFromApiAccessMethodSettings(
     ensureExists(accessMethods.getDirect(), "no 'Direct' access method was found"),
   ) as AccessMethodSetting<DirectMethod>;
   const bridges = convertFromApiAccessMethodSetting(
-    ensureExists(accessMethods.getMullvadBridges(), "no 'Mullvad Bridges' access method was found"),
+    ensureExists(accessMethods.getRostamBridges(), "no 'Rostam Bridges' access method was found"),
   ) as AccessMethodSetting<BridgesMethod>;
   const custom = accessMethods
     .getCustomList()
@@ -1877,7 +1877,7 @@ function convertFromApiAccessMethodSettings(
 
   return {
     direct,
-    mullvadBridges: bridges,
+    rostamBridges: bridges,
     custom,
   };
 }

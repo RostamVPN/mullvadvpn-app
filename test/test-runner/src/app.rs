@@ -16,10 +16,10 @@ pub fn find_traces() -> Result<Vec<AppTrace>, Error> {
 
     let caches = find_cache_traces()?;
     let traces = vec![
-        Path::new(r"C:\Program Files\Mullvad VPN"),
+        Path::new(r"C:\Program Files\Rostam VPN"),
         // NOTE: This only works as of `499c06decda37dc639e5f` in the Mullvad app.
         // Older builds have no way of silently fully uninstalling the app.
-        Path::new(r"C:\ProgramData\Mullvad VPN"),
+        Path::new(r"C:\ProgramData\Rostam VPN"),
         // NOTE: Works as of `4116ebc` (Mullvad app).
         &settings_dir,
         &caches,
@@ -38,7 +38,7 @@ pub fn find_traces() -> Result<Vec<AppTrace>, Error> {
         Path::new(r"/etc/mullvad-vpn/"),
         Path::new(r"/var/log/mullvad-vpn/"),
         &caches,
-        Path::new(r"/opt/Mullvad VPN/"),
+        Path::new(r"/opt/Rostam VPN/"),
         // management interface socket
         Path::new(r"/var/run/mullvad-vpn"),
         // service unit config files
@@ -67,7 +67,7 @@ pub fn find_traces() -> Result<Vec<AppTrace>, Error> {
 
     let caches = find_cache_traces()?;
     let traces = vec![
-        Path::new(r"/Applications/Mullvad VPN.app/"),
+        Path::new(r"/Applications/Rostam VPN.app/"),
         Path::new(r"/var/log/mullvad-vpn/"),
         &caches,
         // management interface socket
@@ -99,7 +99,7 @@ pub async fn make_device_json_old() -> Result<(), Error> {
     const DEVICE_JSON_PATH: &str = "/etc/mullvad-vpn/device.json";
     #[cfg(target_os = "windows")]
     const DEVICE_JSON_PATH: &str =
-        "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Mullvad VPN\\device.json";
+        "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Rostam VPN\\device.json";
     let device_json = tokio::fs::read_to_string(DEVICE_JSON_PATH)
         .await
         .map_err(|e| Error::FileSystem(e.to_string()))?;

@@ -212,7 +212,7 @@ fn frontend_log_dir() -> Option<Result<PathBuf, LogError>> {
         Some(
             dirs::home_dir()
                 .ok_or(LogError::NoHomeDir)
-                .map(|home_dir| home_dir.join(".config/Mullvad VPN/logs")),
+                .map(|home_dir| home_dir.join(".config/Rostam VPN/logs")),
         )
     }
     #[cfg(target_os = "macos")]
@@ -220,13 +220,13 @@ fn frontend_log_dir() -> Option<Result<PathBuf, LogError>> {
         Some(
             dirs::home_dir()
                 .ok_or(LogError::NoHomeDir)
-                .map(|home_dir| home_dir.join("Library/Logs/Mullvad VPN")),
+                .map(|home_dir| home_dir.join("Library/Logs/Rostam VPN")),
         )
     }
     #[cfg(target_os = "windows")]
     {
         Some(match std::env::var_os("LOCALAPPDATA") {
-            Some(dir) => Ok(Path::new(&dir).join("Mullvad VPN/logs")),
+            Some(dir) => Ok(Path::new(&dir).join("Rostam VPN/logs")),
             None => Err(LogError::NoLocalAppDataDir),
         })
     }

@@ -3,7 +3,7 @@
 //  MullvadVPNScreenshots
 //
 //  Created by pronebird on 04/02/2020.
-//  Copyright © 2020 Mullvad VPN AB. All rights reserved.
+//  Copyright © 2020 Rostam VPN AB. All rights reserved.
 //
 
 import XCTest

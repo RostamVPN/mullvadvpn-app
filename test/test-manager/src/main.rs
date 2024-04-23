@@ -16,7 +16,7 @@ use clap::Parser;
 use std::net::SocketAddr;
 use tests::config::DEFAULT_MULLVAD_HOST;
 
-/// Test manager for Mullvad VPN app
+/// Test manager for Rostam VPN app
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {

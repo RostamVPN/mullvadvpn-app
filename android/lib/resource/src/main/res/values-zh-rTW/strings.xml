@@ -18,7 +18,7 @@
     <string name="all_locations">所有位置</string>
     <string name="all_providers">所有供應商</string>
     <string name="allow_lan_footer">允許存取同一網路上的其他裝置，以進行分享、列印等。</string>
-    <string name="always_on_vpn_error_notification_content">無法啟動通道連線。在使用 Mullvad VPN 之前，請先為 &lt;b&gt;%1$s&lt;/b&gt; 停用「始終啟用 VPN」。</string>
+    <string name="always_on_vpn_error_notification_content">無法啟動通道連線。在使用 Rostam VPN 之前，請先為 &lt;b&gt;%1$s&lt;/b&gt; 停用「始終啟用 VPN」。</string>
     <string name="always_on_vpn_error_notification_title">「始終啟用 VPN」已指派給其他應用程式</string>
     <string name="any">任何</string>
     <string name="app_version">應用程式版本</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">自動連線</string>
     <string name="auto_connect_and_lockdown_mode">自動連線和鎖定模式</string>
     <string name="auto_connect_and_lockdown_mode_footer">請確認裝置始終位於 VPN 通道上。</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. 按一下底下&lt;b&gt;前往 VPN 設定&lt;/b&gt;按鈕後，請按一下 &lt;b&gt;Mullvad VPN&lt;/b&gt; 名稱旁邊的齒輪。</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. 按一下底下&lt;b&gt;前往 VPN 設定&lt;/b&gt;按鈕後，請按一下 &lt;b&gt;Rostam VPN&lt;/b&gt; 名稱旁邊的齒輪。</string>
     <string name="auto_connect_carousel_first_slide_top_text">自動連線和鎖定模式設定皆可在 Android 系統設定中找到，請按照本指南的指示，啟用其中一項或兩項設定。</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. 若要啟用自動連線，請按一下&lt;b&gt;始終啟用 VPN&lt;/b&gt; 旁邊的開關。</string>
     <string name="auto_connect_carousel_second_slide_top_text">自動連線在 Android 系統設定中稱為「始終啟用 VPN」，此功能可確保您始終與 VPN 通道連線，並且會在重新啟動後自動連線。</string>
@@ -55,10 +55,10 @@
     <string name="congrats">恭喜！</string>
     <string name="connect">保護我的連線</string>
     <string name="connecting">正在連線</string>
-    <string name="connecting_to_daemon">連線 Mullvad 系統服務中...</string>
+    <string name="connecting_to_daemon">連線 Rostam 系統服務中...</string>
     <string name="continue_login">繼續登入</string>
     <string name="copied_logs_to_clipboard">已將記錄複製到剪貼簿</string>
-    <string name="copied_mullvad_account_number">已將 Mullvad 帳號複製到剪貼簿</string>
+    <string name="copied_rostam_account_number">已將 Rostam 帳號複製到剪貼簿</string>
     <string name="copied_to_clipboard">已複製到剪貼簿</string>
     <string name="copy_account_number">複製帳號</string>
     <string name="create_account">建立帳戶</string>
@@ -152,8 +152,8 @@
     <string name="max_devices_resolved_title">太好了！</string>
     <string name="max_devices_warning_description">請從底下清單至少移除一個裝置來將其登出。您可以在裝置的「帳戶」設定下找到相應裝置名稱。</string>
     <string name="max_devices_warning_title">裝置過多</string>
-    <string name="mullvad_account_number">Mullvad 帳號</string>
-    <string name="mullvad_owned_only">僅 Mullvad 自有</string>
+    <string name="rostam_account_number">Rostam 帳號</string>
+    <string name="rostam_owned_only">僅 Rostam 自有</string>
     <string name="new_device_notification_message">歡迎，此裝置現在稱為 &lt;b&gt;%1$s&lt;/b&gt;。如需詳細資訊，請點按「帳戶」中的資訊按鈕。</string>
     <string name="new_device_notification_title">已建立新裝置</string>
     <string name="no_internet_connection">沒有網際網路連線</string>
@@ -177,12 +177,12 @@
     <string name="payment_completed_dialog_message">已為您的帳戶新增 30 天。</string>
     <string name="payment_completed_dialog_title">已成功新增時間</string>
     <string name="payment_obfuscation_id_error_dialog_message">我們無法啟動付款流程，請稍後再試一次。</string>
-    <string name="payment_obfuscation_id_error_dialog_title">Mullvad 服務無法使用</string>
+    <string name="payment_obfuscation_id_error_dialog_title">Rostam 服務無法使用</string>
     <string name="payment_pending_dialog_message">我們目前正在驗證您的購買，這可能需要一些時間。如果驗證成功，您的時間就會增加。</string>
     <string name="payment_pending_dialog_title">正在驗證購買</string>
     <string name="payment_status_pending">Google Play 付款尚待處理</string>
     <string name="port">連接埠</string>
-    <string name="privacy_disclaimer_body_first_paragraph">為確保您擁有最安全的版本，並告知您目前執行的版本有無任何問題，該應用程式會自動進行版本檢查。為此，應用程式會將其版本和 Android 系統版本傳送至 Mullvad 伺服器，以便讓 Mullvad 統計已使用的應用程式版本和 Android 版本的數量。這些資料永遠不會以任何方式儲存或用來辨識您的身分。</string>
+    <string name="privacy_disclaimer_body_first_paragraph">為確保您擁有最安全的版本，並告知您目前執行的版本有無任何問題，該應用程式會自動進行版本檢查。為此，應用程式會將其版本和 Android 系統版本傳送至 Rostam 伺服器，以便讓 Rostam 統計已使用的應用程式版本和 Android 版本的數量。這些資料永遠不會以任何方式儲存或用來辨識您的身分。</string>
     <string name="privacy_disclaimer_body_second_paragraph">如果使用了分割通道功能，該應用程式會查詢您的系統，以取得所有已安裝應用程式的清單。我們只會在分割通道視圖中擷取這份清單，絕不會傳送至他處。</string>
     <string name="privacy_disclaimer_title">隱私權</string>
     <string name="privacy_policy_label">隱私權政策</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">此應用程式版本不受支援，因此您的隱私可能存在風險。請立即更新。</string>
     <string name="unsupported_version_without_upgrade">您所執行的應用程式版本不受支援。</string>
     <string name="update_available">可用的更新</string>
-    <string name="update_available_description">安裝 Mullvad VPN (%1$s) 以維持最新狀態</string>
+    <string name="update_available_description">安裝 Rostam VPN (%1$s) 以維持最新狀態</string>
     <string name="update_available_footer">更新可用，請下載以維持安全。</string>
     <string name="update_dns_server_dialog_title">更新 DNS 伺服器</string>
     <string name="user_email_hint">您的電子郵件 (選填)</string>

@@ -11,7 +11,7 @@ static DEV_REGEX: Lazy<Regex> =
     Lazy::new(|| Regex::new(r"^(\d{4})\.(\d+)(\.\d+)?(-beta(\d+))?-dev-(\w+)$").unwrap());
 
 /// AppVersionInfo represents the current stable and the current latest release versions of the
-/// Mullvad VPN app.
+/// Rostam VPN app.
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 #[cfg_attr(target_os = "android", derive(IntoJava))]
 #[cfg_attr(target_os = "android", jnix(package = "net.mullvad.mullvadvpn.model"))]

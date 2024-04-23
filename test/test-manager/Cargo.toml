@@ -1,6 +1,6 @@
 [package]
 name = "test-manager"
-description = "Manager process orchestrating e2e tests of the Mullvad VPN app"
+description = "Manager process orchestrating e2e tests of the Rostam VPN app"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

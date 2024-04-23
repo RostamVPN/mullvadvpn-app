@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-paths"
-description = "Mullvad VPN application paths and directories"
+description = "Rostam VPN application paths and directories"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

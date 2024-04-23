@@ -1,4 +1,4 @@
-# Mullvad VPN Android app
+# Rostam VPN Android app
 
 This directory contains the Android project as well as related files and information. Apart from the
 content of this directory, the Android project also relies on building [wireguard-go](../wireguard/)

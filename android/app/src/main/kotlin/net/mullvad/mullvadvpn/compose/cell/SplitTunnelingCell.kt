@@ -1,4 +1,4 @@
-package net.mullvad.mullvadvpn.compose.cell
+package net.rostam.rostamvpn.compose.cell
 
 import android.graphics.Bitmap
 import androidx.compose.foundation.Image
@@ -26,13 +26,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import net.mullvad.mullvadvpn.R
-import net.mullvad.mullvadvpn.compose.component.SpacedColumn
-import net.mullvad.mullvadvpn.compose.util.isBelowMaxBitmapSize
-import net.mullvad.mullvadvpn.lib.theme.AppTheme
-import net.mullvad.mullvadvpn.lib.theme.Dimens
-import net.mullvad.mullvadvpn.lib.theme.color.Alpha40
-import net.mullvad.mullvadvpn.lib.theme.typeface.listItemText
+import net.rostam.rostamvpn.R
+import net.rostam.rostamvpn.compose.component.SpacedColumn
+import net.rostam.rostamvpn.compose.util.isBelowMaxBitmapSize
+import net.rostam.rostamvpn.lib.theme.AppTheme
+import net.rostam.rostamvpn.lib.theme.Dimens
+import net.rostam.rostamvpn.lib.theme.color.Alpha40
+import net.rostam.rostamvpn.lib.theme.typeface.listItemText
 
 @Preview
 @Composable
@@ -43,13 +43,13 @@ private fun PreviewTunnelingCell() {
                 Modifier.background(color = MaterialTheme.colorScheme.background).padding(20.dp)
         ) {
             SplitTunnelingCell(
-                title = "Mullvad VPN",
+                title = "Rostam VPN",
                 packageName = "",
                 isSelected = false,
                 enabled = true
             )
             SplitTunnelingCell(
-                title = "Mullvad VPN",
+                title = "Rostam VPN",
                 packageName = "",
                 isSelected = true,
                 enabled = true

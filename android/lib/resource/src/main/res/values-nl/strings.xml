@@ -18,7 +18,7 @@
     <string name="all_locations">Alle locaties</string>
     <string name="all_providers">Alle aanbieders</string>
     <string name="allow_lan_footer">Biedt toegang tot andere apparaten op hetzelfde netwerk voor delen, afdrukken en dergelijke</string>
-    <string name="always_on_vpn_error_notification_content">Kan de tunnelverbinding niet starten. Schakel Altijd-aan VPN uit voor &lt;b&gt;%1$s&lt;/b&gt; voordat u Mullvad VPN gebruikt.</string>
+    <string name="always_on_vpn_error_notification_content">Kan de tunnelverbinding niet starten. Schakel Altijd-aan VPN uit voor &lt;b&gt;%1$s&lt;/b&gt; voordat u Rostam VPN gebruikt.</string>
     <string name="always_on_vpn_error_notification_title">Altijd-aan VPN toegewezen aan andere app</string>
     <string name="any">Elke</string>
     <string name="app_version">Appversie</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">Automatisch verbinden</string>
     <string name="auto_connect_and_lockdown_mode">Automatisch verbinden en lockdownmodus</string>
     <string name="auto_connect_and_lockdown_mode_footer">Zorg dat het apparaat altijd de VPN-tunnel gebruikt.</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. Klik nadat u op de knop &lt;b&gt;Naar VPN-instellingen&lt;/b&gt; hebt geklikt op het tandwiel naast de naam &lt;b&gt;Mullvad VPN&lt;/b&gt;.</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. Klik nadat u op de knop &lt;b&gt;Naar VPN-instellingen&lt;/b&gt; hebt geklikt op het tandwiel naast de naam &lt;b&gt;Rostam VPN&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_first_slide_top_text">De instellingen Automatisch verbinden en Lockdownmodus zijn te vinden in de Android-systeeminstellingen, volg deze gids om een of beide in te schakelen.</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. Klik om Automatisch verbinden in te schakelen op de schakelaar naast &lt;b&gt;Altijd-aan VPN&lt;/b&gt;.</string>
     <string name="auto_connect_carousel_second_slide_top_text">Automatisch verbinden heet Altijd-aan VPN in de Android-systeeminstellingen en zorgt ervoor dat u altijd verbonden bent met de VPN-tunnel en automatisch verbinding maakt na een herstart.</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Uw privacy kan risico lopen met deze niet-ondersteunde appversie. Werk de app nu bij.</string>
     <string name="unsupported_version_without_upgrade">U gebruikt een niet-ondersteunde versie van de app.</string>
     <string name="update_available">UPDATE BESCHIKBAAR</string>
-    <string name="update_available_description">Installeer Mullvad VPN (%1$s) om up-to-date te blijven</string>
+    <string name="update_available_description">Installeer Rostam VPN (%1$s) om up-to-date te blijven</string>
     <string name="update_available_footer">Update beschikbaar, download deze om veilig te blijven.</string>
     <string name="update_dns_server_dialog_title">DNS-server bijwerken</string>
     <string name="user_email_hint">Uw e-mailadres (optioneel)</string>

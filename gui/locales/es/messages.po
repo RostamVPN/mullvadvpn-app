@@ -856,8 +856,8 @@ msgid "If these steps do not work please send a problem report."
 msgstr "Si estos pasos no funcionan, envíe un informe de problemas."
 
 msgctxt "launch-view"
-msgid "Permission for the Mullvad VPN service has been revoked. Please go to System Settings and allow Mullvad VPN under the “Allow in the Background” setting."
-msgstr "Se ha revocado el permiso para el servicio de Mullvad VPN. Vaya a la configuración del sistema y permita a Mullvad VPN bajo el ajuste «Permitir en Segundo Plano»."
+msgid "Permission for the Rostam VPN service has been revoked. Please go to System Settings and allow Rostam VPN under the “Allow in the Background” setting."
+msgstr "Se ha revocado el permiso para el servicio de Rostam VPN. Vaya a la configuración del sistema y permita a Rostam VPN bajo el ajuste «Permitir en Segundo Plano»."
 
 msgctxt "launch-view"
 msgid "Reinstalling the app."
@@ -1759,7 +1759,7 @@ msgid "Adult content"
 msgstr "Contenido para adultos"
 
 msgctxt "vpn-settings-view"
-msgid "Attention: enabling this will always require a Mullvad VPN connection in order to reach the internet."
+msgid "Attention: enabling this will always require a Rostam VPN connection in order to reach the internet."
 msgstr "Atención: Si activa esta opción, tendrá que usar siempre una conexión VPN de Mullvad para acceder a Internet."
 
 msgctxt "vpn-settings-view"
@@ -1870,7 +1870,7 @@ msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill
 msgstr "La diferencia entre la «Desconexión de seguridad» y el «Modo de bloqueo» es que la «Desconexión de seguridad» impedirá que se produzcan fugas durante reconexiones automáticas de túnel, bloqueos de software y accidentes similares."
 
 msgctxt "vpn-settings-view"
-msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgid "The difference between the Kill Switch and Lockdown Mode is that the Kill Switch will prevent any leaks from happening during automatic tunnel reconnects, software crashes and similar accidents. With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
 msgstr "La diferencia entre la «Desconexión de seguridad» y el «Modo de bloqueo» es que la «Desconexión de seguridad» impedirá que se produzcan fugas durante reconexiones automáticas de túnel, bloqueos de software y accidentes similares. Si está habilitado el «Modo de bloqueo», deberá estar conectado a un servidor VPN de Mullvad para acceder a Internet. Al desconectar o salir de la aplicación de forma manual, se bloqueará la conexión."
 
 msgctxt "vpn-settings-view"
@@ -1927,7 +1927,7 @@ msgid "When this feature is enabled, IPv6 can be used alongside IPv4 in the VPN 
 msgstr "Cuando esta característica está habilitada, se puede usar IPv6 junto a IPv4 en el túnel VPN para comunicarse con los servicios de internet."
 
 msgctxt "vpn-settings-view"
-msgid "With Lockdown Mode enabled, you must be connected to a Mullvad VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
+msgid "With Lockdown Mode enabled, you must be connected to a Rostam VPN server to be able to reach the internet. Manually disconnecting or quitting the app will block your connection."
 msgstr "Si está habilitado el «Modo de bloqueo», deberá estar conectado a un servidor VPN de Mullvad para acceder a Internet. Al desconectar o salir de la aplicación de forma manual, se bloqueará la conexión."
 
 #. Title label in navigation bar
@@ -2018,8 +2018,8 @@ msgctxt "Message to indicate how much time was added to an account as part of an
 msgid "%s was added to your account."
 msgstr "Se ha(n) añadido %s a su cuenta."
 
-msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Mullvad VPN</b> name."
-msgstr "1. Tras hacer clic en el botón <b>Ir a la configuración de VPN</b> de abajo, haga clic en el icono de engranaje situado junto al nombre de la <b>Mullvad VPN</b>."
+msgid "1. After clicking on the <b>Go to VPN settings</b> button below, click on the cogwheel next to the <b>Rostam VPN</b> name."
+msgstr "1. Tras hacer clic en el botón <b>Ir a la configuración de VPN</b> de abajo, haga clic en el icono de engranaje situado junto al nombre de la <b>Rostam VPN</b>."
 
 msgid "2. To enable Auto-connect, click on the toggle next to <b>Always-on VPN</b>."
 msgstr "2. Para habilitar la conexión automática, haga clic en el botón <b>VPN siempre activa</b>."
@@ -2129,8 +2129,8 @@ msgstr "Google Play no disponible"
 msgid "If the split tunneling feature is used, then the app queries your system for a list of all installed applications. This list is only retrieved in the split tunneling view. The list of installed applications is never sent from the device."
 msgstr "Si se utiliza la característica de túnel dividido, la aplicación consultará a su sistema la lista de todas las aplicaciones instaladas. Esta lista solo se recupera en la vista de túnel dividido. La lista de aplicaciones instaladas nunca se envía desde el dispositivo."
 
-msgid "Install Mullvad VPN (%s) to stay up to date"
-msgstr "Instale Mullvad VPN (%s) para seguir actualizado"
+msgid "Install Rostam VPN (%s) to stay up to date"
+msgstr "Instale Rostam VPN (%s) para seguir actualizado"
 
 msgid "Makes sure the device is always on the VPN tunnel."
 msgstr "Asegura que el dispositivo esté siempre activado en el túnel de la VPN."
@@ -2213,7 +2213,7 @@ msgstr "Alternar VPN"
 msgid "Unable to apply firewall rules. Please troubleshoot or send a problem report."
 msgstr "No se pueden aplicar las reglas del firewall. Intente solucionar el problema o envíe un informe de problemas."
 
-msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Mullvad VPN."
+msgid "Unable to start tunnel connection. Please disable Always-on VPN for <b>%s</b> before using Rostam VPN."
 msgstr "No se puede iniciar la conexión de túnel. Deshabilite la VPN siempre activa en <b>%s</b> antes de utilizar la VPN de Mullvad."
 
 msgid "Unsecured"

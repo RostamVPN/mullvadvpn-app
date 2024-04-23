@@ -5,13 +5,13 @@
 DEVELOPMENT_TEAM = CKG9MXH72F
 
 // Product display name
-DISPLAY_NAME = Mullvad VPN
+DISPLAY_NAME = Rostam VPN
 
 // Bundle ID
-APPLICATION_IDENTIFIER = net.mullvad.MullvadVPN
+APPLICATION_IDENTIFIER = net.rostam.RostamVPN
 
 // Shared container security group ID
-SECURITY_GROUP_IDENTIFIER = group.net.mullvad.MullvadVPN
+SECURITY_GROUP_IDENTIFIER = group.net.rostam.RostamVPN
 
 // Code signing style
 // Possible values: Manual or Automatic

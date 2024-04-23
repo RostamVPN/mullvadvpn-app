@@ -3,7 +3,7 @@
 //  MullvadVPNUITests
 //
 //  Created by Niklas Berglund on 2024-01-12.
-//  Copyright © 2024 Mullvad VPN AB. All rights reserved.
+//  Copyright © 2024 Rostam VPN AB. All rights reserved.
 //
 
 import Foundation
@@ -149,7 +149,7 @@ class BaseUITestCase: XCTestCase {
     }
 
     static func uninstallApp() {
-        let appName = "Mullvad VPN"
+        let appName = "Rostam VPN"
 
         let timeout = TimeInterval(5)
         let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")

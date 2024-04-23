@@ -18,7 +18,7 @@
     <string name="all_locations">Alle Standorte</string>
     <string name="all_providers">Alle Anbieter</string>
     <string name="allow_lan_footer">Ermöglicht den Zugriff auf andere Geräte im selben Netzwerk zum Teilen von Dateien, Drucken etc.</string>
-    <string name="always_on_vpn_error_notification_content">Tunnelverbindung kann nicht gestartet werden. Bitte deaktivieren Sie Always-on VPN für &lt;b&gt;%1$s&lt;/b&gt;, bevor Sie Mullvad VPN verwenden.</string>
+    <string name="always_on_vpn_error_notification_content">Tunnelverbindung kann nicht gestartet werden. Bitte deaktivieren Sie Always-on VPN für &lt;b&gt;%1$s&lt;/b&gt;, bevor Sie Rostam VPN verwenden.</string>
     <string name="always_on_vpn_error_notification_title">Always-on VPN ist einer anderen App zugeordnet</string>
     <string name="any">Beliebige</string>
     <string name="app_version">App-Version</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">Ihre Privatsphäre könnte mit dieser nicht unterstützen Version der App gefährdet sein. Bitte aktualisieren Sie sie.</string>
     <string name="unsupported_version_without_upgrade">Sie verwenden eine nicht unterstützte Version der App. </string>
     <string name="update_available">UPDATE VERFÜGBAR</string>
-    <string name="update_available_description">Installieren Sie Mullvad VPN (%1$s), um auf dem neuesten Stand zu bleiben</string>
+    <string name="update_available_description">Installieren Sie Rostam VPN (%1$s), um auf dem neuesten Stand zu bleiben</string>
     <string name="update_available_footer">Update verfügbar, laden Sie es herunter, um sicher zu bleiben.</string>
     <string name="update_dns_server_dialog_title">DNS-Server aktualisieren</string>
     <string name="user_email_hint">Ihre E-Mail-Adresse (optional)</string>

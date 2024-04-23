@@ -1,4 +1,4 @@
-This is a folder with gettext translations for Mullvad VPN app.
+This is a folder with gettext translations for Rostam VPN app.
 
 ## Adding new translations
 
@@ -99,7 +99,7 @@ this is to just run `./scripts/localization prepare` as described above.
 
 All user facing phrases and terms should be translated except for the following trademarks and
 names of technologies:
-* Mullvad VPN
+* Rostam VPN
 * WireGuard
 * OpenVPN
 * Split Tunneling

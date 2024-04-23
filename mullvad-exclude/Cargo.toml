@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-exclude"
-description = "Runs programs outside the Mullvad VPN tunnel on Linux"
+description = "Runs programs outside the Rostam VPN tunnel on Linux"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

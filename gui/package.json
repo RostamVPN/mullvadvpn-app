@@ -1,15 +1,15 @@
 {
-  "name": "mullvad-vpn",
+  "name": "rostam-vpn",
   "version": "0.0.0",
-  "productName": "Mullvad VPN",
+  "productName": "Rostam VPN",
   "private": true,
-  "description": "Mullvad VPN client",
+  "description": "Rostam VPN client",
   "main": "init.js",
   "author": {
-    "name": "Mullvad VPN",
-    "email": "support@mullvadvpn.net"
+    "name": "Rostam VPN",
+    "email": "feedback@rostam.app"
   },
-  "repository": "https://github.com/mullvad/mullvadvpn-app",
+  "repository": "https://github.com/RostamVPN",
   "license": "GPL-3.0",
   "dependencies": {
     "@grpc/grpc-js": "^1.9.6",

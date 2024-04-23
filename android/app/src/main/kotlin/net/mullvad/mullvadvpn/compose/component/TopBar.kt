@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package net.mullvad.mullvadvpn.compose.component
+package net.rostam.rostamvpn.compose.component
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
@@ -41,18 +41,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import net.mullvad.mullvadvpn.R
-import net.mullvad.mullvadvpn.compose.test.TOP_BAR_ACCOUNT_BUTTON
-import net.mullvad.mullvadvpn.compose.test.TOP_BAR_SETTINGS_BUTTON
-import net.mullvad.mullvadvpn.lib.theme.AppTheme
-import net.mullvad.mullvadvpn.lib.theme.Dimens
-import net.mullvad.mullvadvpn.lib.theme.color.AlphaTopBar
+import net.rostam.rostamvpn.R
+import net.rostam.rostamvpn.compose.test.TOP_BAR_ACCOUNT_BUTTON
+import net.rostam.rostamvpn.compose.test.TOP_BAR_SETTINGS_BUTTON
+import net.rostam.rostamvpn.lib.theme.AppTheme
+import net.rostam.rostamvpn.lib.theme.Dimens
+import net.rostam.rostamvpn.lib.theme.color.AlphaTopBar
 
 @Preview
 @Composable
 private fun PreviewTopBar() {
     AppTheme {
-        MullvadTopBar(
+        RostamTopBar(
             containerColor = MaterialTheme.colorScheme.inversePrimary,
             iconTintColor = MaterialTheme.colorScheme.onPrimary,
             onSettingsClicked = null,
@@ -65,7 +65,7 @@ private fun PreviewTopBar() {
 @Composable
 private fun PreviewSlimTopBar() {
     AppTheme {
-        MullvadTopBar(
+        RostamTopBar(
             containerColor = MaterialTheme.colorScheme.inversePrimary,
             iconTintColor = MaterialTheme.colorScheme.onPrimary,
             onSettingsClicked = null,
@@ -78,7 +78,7 @@ private fun PreviewSlimTopBar() {
 @Composable
 private fun PreviewNoIconAndLogoTopBar() {
     AppTheme {
-        MullvadTopBar(
+        RostamTopBar(
             containerColor = MaterialTheme.colorScheme.inversePrimary,
             iconTintColor = MaterialTheme.colorScheme.onPrimary,
             isIconAndLogoVisible = false,
@@ -92,7 +92,7 @@ private fun PreviewNoIconAndLogoTopBar() {
 @Composable
 private fun PreviewNothingTopBar() {
     AppTheme {
-        MullvadTopBar(
+        RostamTopBar(
             containerColor = MaterialTheme.colorScheme.inversePrimary,
             iconTintColor = MaterialTheme.colorScheme.onPrimary,
             isIconAndLogoVisible = false,
@@ -103,7 +103,7 @@ private fun PreviewNothingTopBar() {
 }
 
 @Composable
-fun MullvadTopBar(
+fun RostamTopBar(
     containerColor: Color,
     onSettingsClicked: (() -> Unit)?,
     onAccountClicked: (() -> Unit)?,
@@ -123,7 +123,7 @@ fun MullvadTopBar(
                         modifier = Modifier.size(40.dp),
                         tint = Color.Unspecified
                     )
-                    // Dynamically show Mullvad VPN Text if it fits, to avoid overlapping icons.
+                    // Dynamically show Rostam VPN Text if it fits, to avoid overlapping icons.
                     BoxWithConstraints {
                         val logoTextPainter = painterResource(id = R.drawable.logo_text)
                         val logoHeight = Dimens.mediumPadding
@@ -190,7 +190,7 @@ fun MullvadTopBar(
 }
 
 @Composable
-fun MullvadSmallTopBar(
+fun RostamSmallTopBar(
     title: String,
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {}
@@ -212,7 +212,7 @@ fun MullvadSmallTopBar(
 @Composable
 private fun PreviewMediumTopBar() {
     AppTheme {
-        MullvadMediumTopBar(
+        RostamMediumTopBar(
             title = "Title",
         )
     }
@@ -222,7 +222,7 @@ private fun PreviewMediumTopBar() {
 @Composable
 private fun PreviewLargeTopBar() {
     AppTheme {
-        MullvadLargeTopBar(
+        RostamLargeTopBar(
             title = "Title",
         )
     }
@@ -232,7 +232,7 @@ private fun PreviewLargeTopBar() {
 @Composable
 private fun PreviewSlimMediumTopBar() {
     AppTheme {
-        MullvadMediumTopBar(
+        RostamMediumTopBar(
             title = "Long top bar with long title",
             actions = {
                 IconButton(onClick = {}) {
@@ -247,7 +247,7 @@ private fun PreviewSlimMediumTopBar() {
 }
 
 @Composable
-fun MullvadMediumTopBar(
+fun RostamMediumTopBar(
     title: String,
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {},
@@ -269,7 +269,7 @@ fun MullvadMediumTopBar(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MullvadLargeTopBar(
+fun RostamLargeTopBar(
     title: String,
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {},
@@ -291,10 +291,10 @@ fun MullvadLargeTopBar(
 
 @Preview
 @Composable
-private fun PreviewMullvadTopBarWithLongDeviceName() {
+private fun PreviewRostamTopBarWithLongDeviceName() {
     AppTheme {
         Surface {
-            MullvadTopBarWithDeviceName(
+            RostamTopBarWithDeviceName(
                 containerColor = MaterialTheme.colorScheme.error,
                 iconTintColor = MaterialTheme.colorScheme.onError,
                 onSettingsClicked = null,
@@ -308,10 +308,10 @@ private fun PreviewMullvadTopBarWithLongDeviceName() {
 
 @Preview
 @Composable
-private fun PreviewMullvadTopBarWithShortDeviceName() {
+private fun PreviewRostamTopBarWithShortDeviceName() {
     AppTheme {
         Surface {
-            MullvadTopBarWithDeviceName(
+            RostamTopBarWithDeviceName(
                 containerColor = MaterialTheme.colorScheme.error,
                 iconTintColor = MaterialTheme.colorScheme.onError,
                 onSettingsClicked = null,
@@ -324,7 +324,7 @@ private fun PreviewMullvadTopBarWithShortDeviceName() {
 }
 
 @Composable
-fun MullvadTopBarWithDeviceName(
+fun RostamTopBarWithDeviceName(
     containerColor: Color,
     onSettingsClicked: (() -> Unit)?,
     onAccountClicked: (() -> Unit)?,
@@ -334,7 +334,7 @@ fun MullvadTopBarWithDeviceName(
     daysLeftUntilExpiry: Int?
 ) {
     Column {
-        MullvadTopBar(
+        RostamTopBar(
             containerColor,
             onSettingsClicked,
             onAccountClicked,

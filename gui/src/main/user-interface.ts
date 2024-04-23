@@ -217,7 +217,7 @@ export default class UserInterface implements WindowControllerDelegate {
 
   private createTray(): Tray {
     const tray = new Tray(nativeImage.createEmpty());
-    tray.setToolTip('Mullvad VPN');
+    tray.setToolTip('Rostam VPN');
 
     // disable double click on tray icon since it causes weird delay
     tray.setIgnoreDoubleClickEvents(true);
@@ -423,15 +423,15 @@ export default class UserInterface implements WindowControllerDelegate {
   // On macOS, hotkeys are bound to the app menu and won't work if it's not set,
   // even though the app menu itself is not visible because the app does not appear in the dock.
   private setMacOsAppMenu() {
-    const mullvadVpnSubmenu: Electron.MenuItemConstructorOptions[] = [];
+    const rostamVpnSubmenu: Electron.MenuItemConstructorOptions[] = [];
     if (process.env.NODE_ENV === 'development') {
-      mullvadVpnSubmenu.unshift({ role: 'quit' }, { role: 'reload' }, { role: 'forceReload' });
+      rostamVpnSubmenu.unshift({ role: 'quit' }, { role: 'reload' }, { role: 'forceReload' });
     }
 
     const template: Electron.MenuItemConstructorOptions[] = [
       {
-        label: 'Mullvad VPN',
-        submenu: mullvadVpnSubmenu,
+        label: 'Rostam VPN',
+        submenu: rostamVpnSubmenu,
       },
       {
         label: 'Edit',
@@ -450,7 +450,7 @@ export default class UserInterface implements WindowControllerDelegate {
   private setLinuxAppMenu() {
     const template: Electron.MenuItemConstructorOptions[] = [
       {
-        label: 'Mullvad VPN',
+        label: 'Rostam VPN',
         submenu: [{ role: 'quit' }],
       },
     ];
@@ -592,7 +592,7 @@ export default class UserInterface implements WindowControllerDelegate {
       }
     }
 
-    return 'Mullvad VPN';
+    return 'Rostam VPN';
   }
 
   private createLocationString(location?: ILocation): string | undefined {
@@ -616,8 +616,8 @@ export default class UserInterface implements WindowControllerDelegate {
   ) {
     const template: Electron.MenuItemConstructorOptions[] = [
       {
-        label: sprintf(messages.pgettext('tray-icon-context-menu', 'Open %(mullvadVpn)s'), {
-          mullvadVpn: 'Mullvad VPN',
+        label: sprintf(messages.pgettext('tray-icon-context-menu', 'Open %(rostamVpn)s'), {
+          rostamVpn: 'Rostam VPN',
         }),
         click: () => this.windowController.show(),
       },

@@ -203,13 +203,13 @@ mod service {
         /// Stop forwarding TCP that was previously started with `start_tcp_forward`.
         async fn stop_tcp_forward(id: net::SockHandleId) -> Result<(), Error>;
 
-        /// Restart the Mullvad VPN application.
+        /// Restart the Rostam VPN application.
         async fn restart_mullvad_daemon() -> Result<(), Error>;
 
-        /// Stop the Mullvad VPN application.
+        /// Stop the Rostam VPN application.
         async fn stop_mullvad_daemon() -> Result<(), Error>;
 
-        /// Start the Mullvad VPN application.
+        /// Start the Rostam VPN application.
         async fn start_mullvad_daemon() -> Result<(), Error>;
 
         /// Sets the log level of the daemon service, the verbosity level represents the number of

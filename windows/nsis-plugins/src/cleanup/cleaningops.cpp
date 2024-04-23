@@ -91,7 +91,7 @@ GET_LOCAL_APPDATA:
 std::filesystem::path GetSystemCacheDirectory()
 {
 	const auto programData = common::fs::GetKnownFolderPath(FOLDERID_ProgramData);
-	return std::filesystem::path(programData).append(L"Mullvad VPN").append(L"cache");
+	return std::filesystem::path(programData).append(L"Rostam VPN").append(L"cache");
 }
 
 template <class It>
@@ -124,7 +124,7 @@ void MigrateCacheServiceUser()
 
 	const auto localAppData = GetSystemUserLocalAppData();
 
-	const auto oldCacheDir = std::filesystem::path(localAppData).append(L"Mullvad VPN");
+	const auto oldCacheDir = std::filesystem::path(localAppData).append(L"Rostam VPN");
 
 	common::fs::ScopedNativeFileSystem nativeFileSystem;
 
@@ -161,12 +161,12 @@ void MigrateCacheServiceUser()
 void RemoveLogsCacheCurrentUser()
 {
 	const auto localAppData = common::fs::GetKnownFolderPath(FOLDERID_LocalAppData);
-	const auto appdir = std::filesystem::path(localAppData).append(L"Mullvad VPN");
+	const auto appdir = std::filesystem::path(localAppData).append(L"Rostam VPN");
 
 	std::filesystem::remove_all(appdir);
 
 	const auto roamingAppData = common::fs::GetKnownFolderPath(FOLDERID_RoamingAppData);
-	const auto roamingAppdir = std::filesystem::path(roamingAppData).append(L"Mullvad VPN");
+	const auto roamingAppdir = std::filesystem::path(roamingAppData).append(L"Rostam VPN");
 
 	std::error_code dummy;
 	std::filesystem::remove_all(roamingAppdir, dummy);
@@ -251,7 +251,7 @@ void RemoveLogsCacheOtherUsers()
 	while (files.next(file))
 	{
 		const auto userLocalAppData = ConstructUserPath(files.getDirectory(), file.cFileName, relativeLocalAppData);
-		const auto target = std::filesystem::path(userLocalAppData).append(L"Mullvad VPN");
+		const auto target = std::filesystem::path(userLocalAppData).append(L"Rostam VPN");
 
 		std::error_code dummy;
 		std::filesystem::remove_all(target, dummy);
@@ -259,7 +259,7 @@ void RemoveLogsCacheOtherUsers()
 		if (relativeRoamingAppData.has_value())
 		{
 			const auto userRoamingAppData = ConstructUserPath(files.getDirectory(), file.cFileName, relativeRoamingAppData.value());
-			const auto roamingTarget = std::filesystem::path(userRoamingAppData).append(L"Mullvad VPN");
+			const auto roamingTarget = std::filesystem::path(userRoamingAppData).append(L"Rostam VPN");
 
 			std::filesystem::remove_all(roamingTarget, dummy);
 		}
@@ -269,7 +269,7 @@ void RemoveLogsCacheOtherUsers()
 void RemoveLogsServiceUser()
 {
 	const auto programData = common::fs::GetKnownFolderPath(FOLDERID_ProgramData);
-	const auto appdir = std::filesystem::path(programData).append(L"Mullvad VPN");
+	const auto appdir = std::filesystem::path(programData).append(L"Rostam VPN");
 
 	{
 		common::fs::FileEnumerator files(appdir);
@@ -303,7 +303,7 @@ void RemoveCacheServiceUser()
 void RemoveSettingsServiceUser()
 {
 	const auto localAppData = GetSystemUserLocalAppData();
-	const auto mullvadAppData = std::filesystem::path(localAppData).append(L"Mullvad VPN");
+	const auto mullvadAppData = std::filesystem::path(localAppData).append(L"Rostam VPN");
 
 	common::fs::ScopedNativeFileSystem nativeFileSystem;
 

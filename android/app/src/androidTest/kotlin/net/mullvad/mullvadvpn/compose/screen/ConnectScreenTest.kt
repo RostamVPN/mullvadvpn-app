@@ -1,4 +1,4 @@
-package net.mullvad.mullvadvpn.compose.screen
+package net.rostam.rostamvpn.compose.screen
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.onNodeWithTag
@@ -9,27 +9,27 @@ import io.mockk.every
 import io.mockk.mockk
 import io.mockk.unmockkAll
 import io.mockk.verify
-import net.mullvad.mullvadvpn.compose.createEdgeToEdgeComposeExtension
-import net.mullvad.mullvadvpn.compose.setContentWithTheme
-import net.mullvad.mullvadvpn.compose.state.ConnectUiState
-import net.mullvad.mullvadvpn.compose.test.CIRCULAR_PROGRESS_INDICATOR
-import net.mullvad.mullvadvpn.compose.test.CONNECT_BUTTON_TEST_TAG
-import net.mullvad.mullvadvpn.compose.test.LOCATION_INFO_TEST_TAG
-import net.mullvad.mullvadvpn.compose.test.NOTIFICATION_BANNER_ACTION
-import net.mullvad.mullvadvpn.compose.test.RECONNECT_BUTTON_TEST_TAG
-import net.mullvad.mullvadvpn.compose.test.SCROLLABLE_COLUMN_TEST_TAG
-import net.mullvad.mullvadvpn.compose.test.SELECT_LOCATION_BUTTON_TEST_TAG
-import net.mullvad.mullvadvpn.compose.test.TOP_BAR_ACCOUNT_BUTTON
-import net.mullvad.mullvadvpn.model.GeoIpLocation
-import net.mullvad.mullvadvpn.model.TunnelState
-import net.mullvad.mullvadvpn.relaylist.RelayItem
-import net.mullvad.mullvadvpn.repository.InAppNotification
-import net.mullvad.mullvadvpn.ui.VersionInfo
-import net.mullvad.talpid.net.TransportProtocol
-import net.mullvad.talpid.net.TunnelEndpoint
-import net.mullvad.talpid.tunnel.ActionAfterDisconnect
-import net.mullvad.talpid.tunnel.ErrorState
-import net.mullvad.talpid.tunnel.ErrorStateCause
+import net.rostam.rostamvpn.compose.createEdgeToEdgeComposeExtension
+import net.rostam.rostamvpn.compose.setContentWithTheme
+import net.rostam.rostamvpn.compose.state.ConnectUiState
+import net.rostam.rostamvpn.compose.test.CIRCULAR_PROGRESS_INDICATOR
+import net.rostam.rostamvpn.compose.test.CONNECT_BUTTON_TEST_TAG
+import net.rostam.rostamvpn.compose.test.LOCATION_INFO_TEST_TAG
+import net.rostam.rostamvpn.compose.test.NOTIFICATION_BANNER_ACTION
+import net.rostam.rostamvpn.compose.test.RECONNECT_BUTTON_TEST_TAG
+import net.rostam.rostamvpn.compose.test.SCROLLABLE_COLUMN_TEST_TAG
+import net.rostam.rostamvpn.compose.test.SELECT_LOCATION_BUTTON_TEST_TAG
+import net.rostam.rostamvpn.compose.test.TOP_BAR_ACCOUNT_BUTTON
+import net.rostam.rostamvpn.model.GeoIpLocation
+import net.rostam.rostamvpn.model.TunnelState
+import net.rostam.rostamvpn.relaylist.RelayItem
+import net.rostam.rostamvpn.repository.InAppNotification
+import net.rostam.rostamvpn.ui.VersionInfo
+import net.rostam.talpid.net.TransportProtocol
+import net.rostam.talpid.net.TunnelEndpoint
+import net.rostam.talpid.tunnel.ActionAfterDisconnect
+import net.rostam.talpid.tunnel.ErrorState
+import net.rostam.talpid.tunnel.ErrorStateCause
 import org.joda.time.DateTime
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
@@ -669,7 +669,7 @@ class ConnectScreenTest {
 
             // Assert
             onNodeWithText("UPDATE AVAILABLE").assertExists()
-            onNodeWithText("Install Mullvad VPN (1.1) to stay up to date").assertExists()
+            onNodeWithText("Install Rostam VPN (1.1) to stay up to date").assertExists()
         }
     }
 

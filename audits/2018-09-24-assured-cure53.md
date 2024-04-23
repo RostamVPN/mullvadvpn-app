@@ -1,7 +1,7 @@
 # 2018-09-24 - Assured and Cure53
 
 Eight testers from [Cure53](https://cure53.de/) and [Assured](https://assured.se/) spent a total of
-18 days to complete the audit of version [2018.2] of the Mullvad VPN app.
+18 days to complete the audit of version [2018.2] of the Rostam VPN app.
 
 As summarized in the report, "the assessment yielded a total of seven issues, which [is] an
 exceptionally small number given the complex field of the VPN software and the connected, vast

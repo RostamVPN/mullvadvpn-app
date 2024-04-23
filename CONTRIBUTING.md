@@ -1,6 +1,6 @@
-# How to contribute to the Mullvad VPN app
+# How to contribute to the Rostam VPN app
 
-The Mullvad VPN app is open sourced for many reasons, but primarily we want to
+The Rostam VPN app is open sourced for many reasons, but primarily we want to
 * allow users to verify that our app functions as we claim it does, giving them the option to build
   it from source without having to trust our released binaries
 * receive contributions from third parties.
@@ -11,15 +11,15 @@ The Mullvad VPN app is open sourced for many reasons, but primarily we want to
 If you find a bug in the app's code, please report it on GitHub in the issue tracker. Please send
 all other problems or questions (those not directly related to the app's development) to
 [support@mullvadvpn.net](mailto:support@mullvadvpn.net). This includes connection issues, questions
-regarding your account, and problems with the Mullvad VPN infrastructure or servers.
+regarding your account, and problems with the Rostam VPN infrastructure or servers.
 
 
 ## Submitting changes
 
-If you would like to contribute to the development of the Mullvad VPN app, please carefully read the
+If you would like to contribute to the development of the Rostam VPN app, please carefully read the
 following sections first and then feel free to submit a pull request on GitHub.
 
-While we appreciate your interest in helping us to improve Mullvad VPN, please understand that
+While we appreciate your interest in helping us to improve Rostam VPN, please understand that
 choosing which submitted changes to merge is fully at our discretion, based upon our development
 plans for the app.
 

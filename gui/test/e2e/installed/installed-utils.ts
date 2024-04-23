@@ -7,11 +7,11 @@ export const startInstalledApp = async (): ReturnType<typeof startApp> => {
 function getAppInstallPath(): string {
   switch (process.platform) {
     case 'win32':
-      return 'C:\\Program Files\\Mullvad VPN\\Mullvad VPN.exe';
+      return 'C:\\Program Files\\Rostam VPN\\Rostam VPN.exe';
     case 'linux':
-      return '/opt/Mullvad VPN/mullvad-gui';
+      return '/opt/Rostam VPN/mullvad-gui';
     case 'darwin':
-      return '/Applications/Mullvad VPN.app/Contents/MacOS/Mullvad VPN';
+      return '/Applications/Rostam VPN.app/Contents/MacOS/Rostam VPN';
     default:
       throw new Error('Platform not supported');
   }

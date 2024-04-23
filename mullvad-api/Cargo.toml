@@ -1,6 +1,6 @@
 [package]
 name = "mullvad-api"
-description = "Mullvad VPN API clients. Providing an interface to query our infrastructure for information."
+description = "Rostam VPN API clients. Providing an interface to query our infrastructure for information."
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

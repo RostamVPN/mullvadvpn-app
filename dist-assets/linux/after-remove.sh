@@ -19,7 +19,7 @@ function clear_gpu_cache {
   home_dirs=$(get_home_dirs)
 
   for home_dir in $home_dirs; do
-      local gpu_cache_dir="$home_dir/.config/Mullvad VPN/GPUCache"
+      local gpu_cache_dir="$home_dir/.config/Rostam VPN/GPUCache"
       if [[ -d "$gpu_cache_dir" ]]; then
           echo "Clearing GPU cache in $gpu_cache_dir"
           rm -r --interactive=never "$gpu_cache_dir" || \
@@ -37,7 +37,7 @@ function remove_config {
   local home_dirs
   home_dirs=$(get_home_dirs)
   for home_dir in $home_dirs; do
-      local mullvad_dir="$home_dir/.config/Mullvad VPN"
+      local mullvad_dir="$home_dir/.config/Rostam VPN"
       if [[ -d "$mullvad_dir" ]]; then
           echo "Removing mullvad-vpn app settings from $mullvad_dir"
           rm -r --interactive=never "$mullvad_dir" || \

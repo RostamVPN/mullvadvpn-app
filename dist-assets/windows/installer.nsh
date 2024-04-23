@@ -708,7 +708,7 @@
 
 	# Application uninstall key
 	# Migrate 2018.6 through 2019.7 to current
-	registry::MoveKey "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Mullvad VPN" "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\${APP_GUID}"
+	registry::MoveKey "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Rostam VPN" "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\${APP_GUID}"
 
 	# Discard return value
 	Pop $0
@@ -927,7 +927,7 @@
 
 	# Copy over the daemon log from the old install for debugging purposes
 	SetShellVarContext all
-	CopyFiles /SILENT /FILESONLY "$LOCALAPPDATA\Mullvad VPN\daemon.log" "$LOCALAPPDATA\Mullvad VPN\old-install-daemon.log"
+	CopyFiles /SILENT /FILESONLY "$LOCALAPPDATA\Rostam VPN\daemon.log" "$LOCALAPPDATA\Rostam VPN\old-install-daemon.log"
 
 	log::Log "Removing Mullvad service"
 	nsExec::ExecToStack '"$SYSDIR\sc.exe" delete mullvadvpn'
@@ -1136,7 +1136,7 @@
 		log::SetLogTarget ${LOG_VOID}
 
 		SetShellVarContext all
-		Delete "$LOCALAPPDATA\Mullvad VPN\uninstall.log"
+		Delete "$LOCALAPPDATA\Rostam VPN\uninstall.log"
 	${EndIf}
 
 	${UnloadPlugins}

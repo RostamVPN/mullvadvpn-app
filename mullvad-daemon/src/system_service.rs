@@ -33,7 +33,7 @@ use windows_sys::Win32::{
 };
 
 static SERVICE_NAME: &str = "MullvadVPN";
-static SERVICE_DISPLAY_NAME: &str = "Mullvad VPN Service";
+static SERVICE_DISPLAY_NAME: &str = "Rostam VPN Service";
 static SERVICE_TYPE: ServiceType = ServiceType::OWN_PROCESS;
 
 const SERVICE_RECOVERY_LAST_RESTART_DELAY: Duration = Duration::from_secs(60 * 10);

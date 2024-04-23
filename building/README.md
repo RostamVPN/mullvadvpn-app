@@ -1,4 +1,4 @@
-# Mullvad VPN app build containers
+# Rostam VPN app build containers
 
 Substitute `${repo}` with the actual absolute path to this repository
 

@@ -18,7 +18,7 @@
     <string name="all_locations">所有位置</string>
     <string name="all_providers">所有提供商</string>
     <string name="allow_lan_footer">允许访问同一网络上的其他设备，以进行共享、打印等</string>
-    <string name="always_on_vpn_error_notification_content">无法启动隧道连接。在使用 Mullvad VPN 之前，请为 &lt;b&gt;%1$s&lt;/b&gt; 禁用“始终开启的 VPN”。</string>
+    <string name="always_on_vpn_error_notification_content">无法启动隧道连接。在使用 Rostam VPN 之前，请为 &lt;b&gt;%1$s&lt;/b&gt; 禁用“始终开启的 VPN”。</string>
     <string name="always_on_vpn_error_notification_title">“始终开启的 VPN”已分配给其他应用</string>
     <string name="any">任何</string>
     <string name="app_version">应用版本</string>
@@ -27,7 +27,7 @@
     <string name="auto_connect">自动连接</string>
     <string name="auto_connect_and_lockdown_mode">自动连接和锁定模式</string>
     <string name="auto_connect_and_lockdown_mode_footer">确保设备始终位于 VPN 隧道上。</string>
-    <string name="auto_connect_carousel_first_slide_bottom_text">1. 点击下方的&lt;b&gt;前往 VPN 设置&lt;/b&gt;按钮后，点击 &lt;b&gt;Mullvad VPN&lt;/b&gt; 名称旁边的齿轮。</string>
+    <string name="auto_connect_carousel_first_slide_bottom_text">1. 点击下方的&lt;b&gt;前往 VPN 设置&lt;/b&gt;按钮后，点击 &lt;b&gt;Rostam VPN&lt;/b&gt; 名称旁边的齿轮。</string>
     <string name="auto_connect_carousel_first_slide_top_text">自动连接和锁定模式设置可以在 Android 系统设置中找到，请按照本指南启用其中一项或两项。</string>
     <string name="auto_connect_carousel_second_slide_bottom_text">2. 要启用自动连接，请点击&lt;b&gt;始终开启的 VPN&lt;/b&gt; 旁边的开关。</string>
     <string name="auto_connect_carousel_second_slide_top_text">自动连接在 Android 系统设置中称为“始终开启的 VPN”，此功能可确保您始终连接到 VPN 隧道并在重新启动后自动连接。</string>
@@ -245,7 +245,7 @@
     <string name="unsupported_version_description">此应用版本不受支持，因此您的隐私可能存在风险。请立即更新。</string>
     <string name="unsupported_version_without_upgrade">您正在运行不受支持的应用版本。</string>
     <string name="update_available">有可用更新</string>
-    <string name="update_available_description">安装 Mullvad VPN (%1$s) 以保持最新状态</string>
+    <string name="update_available_description">安装 Rostam VPN (%1$s) 以保持最新状态</string>
     <string name="update_available_footer">有可用更新，请下载以保持安全。</string>
     <string name="update_dns_server_dialog_title">更新 DNS 服务器</string>
     <string name="user_email_hint">您的电子邮件（可选）</string>

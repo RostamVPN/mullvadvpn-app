@@ -1,6 +1,6 @@
 [package]
 name = "test-runner"
-description = "Runs inside the VM where the Mullvad VPN app is being tested"
+description = "Runs inside the VM where the Rostam VPN app is being tested"
 authors.workspace = true
 repository.workspace = true
 license.workspace = true

@@ -3,7 +3,7 @@
 //  TunnelObfuscation
 //
 //  Created by pronebird on 2023-06-23.
-//  Copyright © 2022 Mullvad VPN AB. All rights reserved.
+//  Copyright © 2022 Rostam VPN AB. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

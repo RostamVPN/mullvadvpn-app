@@ -2,7 +2,7 @@
 //! OpenVPN relay chosen by the relay selector.
 //!
 //! [`MullvadEndpoint`] contains all the necessary information for establishing a connection
-//! between the client and Mullvad VPN. It is the daemon's responsibility to establish this
+//! between the client and Rostam VPN. It is the daemon's responsibility to establish this
 //! connection.
 //!
 //! [`MullvadEndpoint`]: mullvad_types::endpoint::MullvadEndpoint

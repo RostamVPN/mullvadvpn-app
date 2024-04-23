@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Download, verify and install the Mullvad VPN app from the build servers.
+# Download, verify and install the Rostam VPN app from the build servers.
 # Pass the desired version of the app as the first and only argument.
 
 set -eu
@@ -12,7 +12,7 @@ fi
 
 URL_BASE="https://releases.mullvad.net/desktop"
 
-# Pass Mullvad VPN app version as first and only argument
+# Pass Rostam VPN app version as first and only argument
 version=$1
 
 # Store all downloaded files in a directory dedicated to our user

@@ -14,7 +14,7 @@ use std::{
 };
 
 /// Fetches relay list from <https://api.mullvad.net/app/v1/relays>
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct RelayListProxy {
     handle: rest::MullvadRestHandle,
 }

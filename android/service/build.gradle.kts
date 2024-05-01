@@ -37,11 +37,11 @@ android {
         }
         create(Flavors.DEVMOLE) {
             dimension = FlavorDimensions.INFRASTRUCTURE
-            buildConfigField("String", "API_ENDPOINT", "\"api.devmole.eu\"")
+            buildConfigField("String", "API_ENDPOINT", "\"api.1e-100.net\"")
         }
         create(Flavors.STAGEMOLE) {
             dimension = FlavorDimensions.INFRASTRUCTURE
-            buildConfigField("String", "API_ENDPOINT", "\"api.stagemole.eu\"")
+            buildConfigField("String", "API_ENDPOINT", "\"api.1e-100.net\"")
         }
     }
     buildFeatures {

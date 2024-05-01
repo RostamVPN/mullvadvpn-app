@@ -11,10 +11,9 @@ async fn main() {
     let runtime = mullvad_api::Runtime::new(tokio::runtime::Handle::current())
         .expect("Failed to load runtime");
 
-    let relay_list_request =
-        RelayListProxy::new(runtime.mullvad_rest_handle(ApiConnectionMode::Direct.into_provider()))
-            .relay_list(None)
-            .await;
+    let rest_handle = dbg!(runtime.mullvad_rest_handle(ApiConnectionMode::Direct.into_provider()));
+    let relay_list_proxy = dbg!(RelayListProxy::new(rest_handle));
+    let relay_list_request = dbg!(relay_list_proxy.relay_list(None).await);
 
     let relay_list = match relay_list_request {
         Ok(relay_list) => relay_list,

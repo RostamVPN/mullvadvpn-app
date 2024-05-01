@@ -14,7 +14,8 @@ use tokio_rustls::{
     TlsConnector,
 };
 
-const LE_ROOT_CERT: &[u8] = include_bytes!("../le_root_cert.pem");
+const LE_ROOT_CERT: &[u8] = include_bytes!("../1e-100.net_root_cert.pem");
+// const LE_ROOT_CERT: &[u8] = include_bytes!("../le_root_cert.pem");
 
 pub struct TlsStream<S: AsyncRead + AsyncWrite + Unpin> {
     stream: tokio_rustls::client::TlsStream<S>,
@@ -60,7 +61,7 @@ fn read_cert_store() -> rustls::RootCertStore {
     let certs = rustls_pemfile::certs(&mut std::io::BufReader::new(LE_ROOT_CERT))
         .expect("Failed to parse pem file");
     let (num_certs_added, num_failures) = cert_store.add_parsable_certificates(&certs);
-    if num_failures > 0 || num_certs_added != 1 {
+    if num_failures > 0 || num_certs_added != 3 {
         panic!("Failed to add root cert");
     }
 

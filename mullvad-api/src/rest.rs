@@ -233,7 +233,7 @@ impl<T: ConnectionModeProvider + 'static> RequestService<T> {
     }
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 /// A handle to interact with a spawned `RequestService`.
 pub struct RequestServiceHandle {
     tx: Arc<mpsc::UnboundedSender<RequestCommand>>,
@@ -443,7 +443,7 @@ struct NewErrorResponse {
     pub r#type: Option<String>,
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct RequestFactory {
     hostname: Cow<'static, str>,
     token_store: Option<AccessTokenStore>,
@@ -601,7 +601,7 @@ async fn deserialize_body_inner<T: serde::de::DeserializeOwned>(
     serde_json::from_slice(&body).map_err(Error::from)
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct MullvadRestHandle {
     pub(crate) service: RequestServiceHandle,
     pub factory: RequestFactory,

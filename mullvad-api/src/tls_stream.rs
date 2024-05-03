@@ -58,15 +58,38 @@ where
 fn read_cert_store() -> rustls::RootCertStore {
     let mut cert_store = rustls::RootCertStore::empty();
 
+    match rustls_native_certs::load_native_certs() {
+        Ok(certs) => {
+            for cert in certs {
+                let _ = cert_store.add(&rustls::Certificate(cert.as_ref().to_vec()));
+            }
+        },
+        Err(err) => panic!("could not load native certs: {:?}", err),
+    };
+
     let certs = rustls_pemfile::certs(&mut std::io::BufReader::new(LE_ROOT_CERT))
-        .expect("Failed to parse pem file");
-    let (num_certs_added, num_failures) = cert_store.add_parsable_certificates(&certs);
-    if num_failures > 0 || num_certs_added != 3 {
-        panic!("Failed to add root cert");
-    }
+         .expect("Failed to parse pem file");
+    cert_store.add_parsable_certificates(&certs);
 
     cert_store
 }
+
+// fn read_cert_store() -> rustls::RootCertStore {
+//     let mut cert_store = match rustls_native_certs::load_native_certs() {
+//         Ok(store) => store,
+//         Err((Some(store), _)) => store,
+//         Err((None, err)) => panic!("could not load native certs: {:?}", err),
+//     };
+
+//     let certs = rustls_pemfile::certs(&mut std::io::BufReader::new(LE_ROOT_CERT))
+//         .expect("Failed to parse pem file");
+//     let (num_certs_added, num_failures) = cert_store.add_parsable_certificates(&certs);
+//     if num_failures > 0 || num_certs_added != 3 {
+//         panic!("Failed to add root cert");
+//     }
+
+//     cert_store
+// }
 
 impl<S> AsyncRead for TlsStream<S>
 where

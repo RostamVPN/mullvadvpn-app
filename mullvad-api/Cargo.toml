@@ -30,6 +30,7 @@ tokio-rustls = "0.24.1"
 tokio-socks = "0.5.1"
 rustls-pemfile = "1.0.3"
 once_cell = { workspace = true }
+rustls-native-certs = "0.7.0"
 
 mullvad-fs = { path = "../mullvad-fs" }
 mullvad-types = { path = "../mullvad-types" }

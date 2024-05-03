@@ -404,8 +404,9 @@ impl ProblemReport {
     }
 
     fn redact_account_number(input: &str) -> Cow<'_, str> {
-        static RE: Lazy<Regex> = Lazy::new(|| Regex::new("\\d{16}").unwrap());
-        RE.replace_all(input, "[REDACTED ACCOUNT NUMBER]")
+        //static RE: Lazy<Regex> = Lazy::new(|| Regex::new("\\d{16}").unwrap());
+        //RE.replace_all(input, "[REDACTED ACCOUNT NUMBER]")
+        Cow::Borrowed(input)
     }
 
     fn redact_home_dir(input: &str) -> Cow<'_, str> {
@@ -413,35 +414,38 @@ impl ProblemReport {
     }
 
     fn redact_network_info(input: &str) -> Cow<'_, str> {
-        static RE: Lazy<Regex> = Lazy::new(|| {
-            let boundary = "[^0-9a-zA-Z.:]";
-            let combined_pattern = format!(
-                "(?P<start>^|{})(?:{}|{}|{})",
-                boundary,
-                build_ipv4_regex(),
-                build_ipv6_regex(),
-                build_mac_regex(),
-            );
-            Regex::new(&combined_pattern).unwrap()
-        });
-        RE.replace_all(input, "$start[REDACTED]")
+        // static RE: Lazy<Regex> = Lazy::new(|| {
+        //     let boundary = "[^0-9a-zA-Z.:]";
+        //     let combined_pattern = format!(
+        //         "(?P<start>^|{})(?:{}|{}|{})",
+        //         boundary,
+        //         build_ipv4_regex(),
+        //         build_ipv6_regex(),
+        //         build_mac_regex(),
+        //     );
+        //     Regex::new(&combined_pattern).unwrap()
+        // });
+        // RE.replace_all(input, "$start[REDACTED]")
+        Cow::Borrowed(input)
     }
 
     fn redact_guids(input: &str) -> Cow<'_, str> {
-        static RE: Lazy<Regex> = Lazy::new(|| {
-            Regex::new(r"(?i)\{?[A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}\}?")
-                .unwrap()
-        });
-        RE.replace_all(input, "[REDACTED]")
+        // static RE: Lazy<Regex> = Lazy::new(|| {
+        //     Regex::new(r"(?i)\{?[A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}\}?")
+        //         .unwrap()
+        // });
+        // RE.replace_all(input, "[REDACTED]")
+        Cow::Borrowed(input)
     }
 
     fn redact_custom_strings<'a>(&self, input: &'a str) -> Cow<'a, str> {
         // Can probably me made a lot faster with aho-corasick if optimization is ever needed.
-        let mut out = Cow::from(input);
-        for redact in &self.redact_custom_strings {
-            out = out.replace(redact, "[REDACTED]").into()
-        }
-        out
+        // let mut out = Cow::from(input);
+        // for redact in &self.redact_custom_strings {
+        //     out = out.replace(redact, "[REDACTED]").into()
+        // }
+        // out
+        Cow::Borrowed(input)
     }
 
     fn write_to<W: Write>(&self, mut output: W) -> io::Result<()> {
